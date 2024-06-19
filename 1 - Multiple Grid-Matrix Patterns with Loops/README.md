@@ -28,5 +28,7 @@
 | [Pattern 23](https://github.com/JawadSher/Data-Structures-Algorithms-Based-Problems/tree/main/1%20-%20Multiple%20Grid-Matrix%20Patterns%20with%20Loops/Pattern%20-%2023) | Symmetric numerical pyramid or triangle.|
 | [Pattern 24](https://github.com/JawadSher/Data-Structures-Algorithms-Based-Problems/tree/main/1%20-%20Multiple%20Grid-Matrix%20Patterns%20with%20Loops/Pattern%20-%2024) | Symmetric numeric pyramid with asterisks.|
 
+<hr>
 
+Happy Coding
 
