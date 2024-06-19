@@ -21,6 +21,7 @@ Let's go through the C++ code provided to you  in the file main.cpp step by step
 -  **Input**:
     
      ```cout << "Enter the value of N: ";```
+   
      ```cin >> N;``` 
     
     -   Prompts the user to enter a value for `N` and stores it in the variable `N`.
