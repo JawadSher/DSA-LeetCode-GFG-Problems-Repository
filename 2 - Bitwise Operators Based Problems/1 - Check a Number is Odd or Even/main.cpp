@@ -1,3 +1,5 @@
+// Description: Write a function to check if a given integer is even or odd using bitwise operators.
+
 #include <iostream>
 using namespace std;
 
