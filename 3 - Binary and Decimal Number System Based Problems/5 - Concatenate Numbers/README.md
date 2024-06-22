@@ -1,25 +1,52 @@
 ## Source Code Explanation
-1.  **Initialization:**
+1.  **Header Inclusion:**
     
-    -   You’ve declared an integer variable  `ans`  and initialized it to 0. This variable will store the concatenated result.
-    -   The  `range`  variable is set to 5, which determines how many numbers you want to input.
-2.  **Loop:**
+    -   `<iostream>`: This header file is included for input/output operations (like `cin` for user input and `cout` for printing).
+2.  **`main` Function:**
     
-    -   The  `while`  loop runs as long as  `range`  is not zero.
-    -   Inside the loop:
-        -   It prompts the user to enter a value for  `n`.
-        -   The input value is read using  `cin`.
-        -   The current value of  `ans`  is multiplied by 10 (shifting its digits left) and then added to the input value of  `n`. This effectively concatenates the digits.
-        -   The  `range`  is decremented by 1.
-3.  **Example Input:**
-    
-    -   If you input the numbers 1, 2, 3, 4, and 5, the concatenation process would be as follows:
-        -   Initially,  `ans`  is 0.
-        -   After inputting 1:  `ans = 1`.
-        -   After inputting 2:  `ans = 12`.
-        -   After inputting 3:  `ans = 123`.
-        -   After inputting 4:  `ans = 1234`.
-        -   After inputting 5:  `ans = 12345`.
-4.  **Final Output:**
-    
-    -   The program prints the concatenated result, which is 12345.
+    -   **Variable Declarations:**
+        
+        -   `n`: An integer variable to store the value entered by the user in each iteration of the loop.
+        -   `range`: An integer variable initialized to 5. It acts as a counter to control the loop and collect values for five iterations (assuming you want to concatenate five numbers).
+        -   `ans`: An integer variable initialized to 0. It will store the final concatenated number.
+    -   **Loop:**
+        
+        -   The `while (range)` loop continues as long as `range` is not zero. Since `range` is initially 5, the loop will run five times.
+        -   Inside the loop:
+            -   `cout << "Enter the value of n: ";`: This line prompts the user to enter an integer value.
+            -   `cin >> n;`: This line reads the user's input and stores it in the `n` variable.
+            -   `ans = ans * 10 + n;`: This is the key line for concatenation. It does the following:
+                -   `ans * 10`: Multiplies the current value of `ans` by 10. This effectively shifts the existing digits in `ans` one place to the left, making space for the new digit to be added.
+                -   `+ n`: Adds the newly entered value `n` to the shifted `ans`. This essentially appends `n` to the left side of the existing number in `ans`.
+            -   `range--;`: Decrements the `range` counter by 1 to control the number of loop iterations.
+    -   **Output:**
+        
+        -   `cout << "Concatenated Number is: " << ans;`: This line prints a message to the console displaying the final concatenated number stored in `ans`.
+    -   **Return:**
+        
+        -   `return 0;`: This line indicates successful program termination.
+
+## Example Output
+
+If the user enters the following values:
+
+```
+Enter the value of n: 1
+Enter the value of n: 2
+Enter the value of n: 3
+Enter the value of n: 4
+Enter the value of n: 5
+
+```
+
+The output will be:
+
+```
+Concatenated Number is: 12345
+
+```
+
+**Note:**
+
+-   This code assumes the user will enter valid integer values. You could add error handling to check for invalid input.
+-   The size of the concatenated number depends on the initial value of `range`. To concatenate a different number of values, you'd need to adjust `range` accordingly.
