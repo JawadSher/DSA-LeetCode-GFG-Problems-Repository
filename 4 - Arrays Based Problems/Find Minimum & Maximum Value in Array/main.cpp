@@ -3,7 +3,7 @@
 using namespace std;
 
 int maxValue(int arr[], int n){
-    int value = 0;
+    int value = INT_MIN;
     for(int i = 0; i < n; i++){
         if(arr[i] > value){
             value = arr[i];
@@ -13,7 +13,7 @@ int maxValue(int arr[], int n){
 }
 
 int minValue(int arr[], int n){
-    int value = 0;
+    int value = INT_MAX;
     for(int i = 0; i < n; i++){
         if(arr[i] < value){
             value = arr[i];
@@ -32,5 +32,4 @@ int main(){
     cout<<"Min value is : "<<min_val;
     return 0;
 }
-
 
