@@ -1,5 +1,6 @@
 // Linear Search Approach
 #include<iostream>
+#include<climits>
 using namespace std;
 
 int maxValue(int arr[], int n){
