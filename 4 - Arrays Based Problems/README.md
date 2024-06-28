@@ -14,6 +14,18 @@ This repository contains solutions to various array-based problems commonly enco
 | 7. [Find Minimum & Maximum Value in Array](https://github.com/JawadSher/Data-Structures-Algorithms-Based-Problems/tree/main/4%20-%20Arrays%20Based%20Problems/Find%20Minimum%20%26%20Maximum%20Value%20in%20Array)              | Determine the smallest and largest values in an array.                |
 | 8. [Duplicate Elements in Array](https://github.com/JawadSher/Data-Structures-Algorithms-Based-Problems/tree/main/4%20-%20Arrays%20Based%20Problems/Duplicate%20Elements%20in%20Array)                       | Find and handle duplicate elements in an array.                        |
 | 9. [Find First and Second Largest Element in Array](https://github.com/JawadSher/Data-Structures-Algorithms-Based-Problems/tree/main/4%20-%20Arrays%20Based%20Problems/Find%20First%20and%20Second%20Largest%20Element%20in%20Array)     | Identify the largest and second largest elements in an array.         |
+| 10. [Swap Alternate Elements in Array](https://github.com/JawadSher/Data-Structures-Algorithms-Based-Problems/tree/main/4%20-%20Arrays%20Based%20Problems/Swap%20Alternate%20Elements%20in%20Array) |Swap alternate elements in an array |
+| 11. [Find Unique Element in Array](https://github.com/JawadSher/Data-Structures-Algorithms-Based-Problems/tree/main/4%20-%20Arrays%20Based%20Problems/Find%20Unique%20Element%20in%20Array) | Find the unique element in an array |
+| 12. [Sort the Un_Sorted Array](https://github.com/JawadSher/Data-Structures-Algorithms-Based-Problems/tree/main/4%20-%20Arrays%20Based%20Problems/Sort%20the%20Un_Sorted%20Array) | Sort an unsorted array |
+| 13. [Unique Number of Occurences](https://github.com/JawadSher/Data-Structures-Algorithms-Based-Problems/tree/main/4%20-%20Arrays%20Based%20Problems/Unique%20Number%20of%20Occurences) | Determine if all elements in an array have unique occurrences |
+| 14. [Find out the Intersected Elements in Array](https://github.com/JawadSher/Data-Structures-Algorithms-Based-Problems/tree/main/4%20-%20Arrays%20Based%20Problems/Find%20out%20the%20Intersected%20Elements%20in%20Array) | Find common elements between two arrays
+
+
+
+
+
+
+
 
 <hr>
 
