@@ -1,14 +1,15 @@
+// Brute Force Approach
 #include<iostream>
 using namespace std;
 
 void sort_array(int arr[], int n){
     
     for(int i = 0; i < n-1; i++){
-        for(int k = 0; k < n-i-1; k++){
-            if(arr[k] > arr[k+1]){
-                int temp = arr[k];
-                arr[k] = arr[k+1];
-                arr[k+1] = temp;
+        for(int k = i+1; k < n; k++){
+            if(arr[k] < arr[i]){
+                int temp = arr[i];
+                arr[i] = arr[k];
+                arr[k] = temp;
             }
         }
     }
