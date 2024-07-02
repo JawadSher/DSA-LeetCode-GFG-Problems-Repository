@@ -56,8 +56,6 @@ Contributions are welcome! If you have a new problem to add or an improvement to
 5. Push to the branch (`git push origin new-feature`).
 6. Open a pull request.
 
-Please follow our [Code of Conduct](CODE_OF_CONDUCT.md) when contributing.
-
 ## FAQs
 
 **Q: How do I submit my solution?**  
