@@ -1,6 +1,6 @@
 <h1 align='center'>D A T A &nbsp; S T R U C T U R E S &nbsp; &amp; &nbsp; A L G O R I T H M S</h1>
 
-This repository contains Data Structures & Algorithms based problems to help enhance your competitive programming skills.
+<p align='center'>This repository contains Data Structures & Algorithms based problems to help enhance your competitive programming skills.</p>
 
 <p align="center">
   <img src="https://img.shields.io/github/license/JawadSher/Data-Structures-Algorithms-Based-Problems" alt="License">
