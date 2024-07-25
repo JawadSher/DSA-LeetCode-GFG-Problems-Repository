@@ -23,13 +23,15 @@ The repository includes a range of problems, many of which are inspired by LeetC
 
 ## Problem Set Overview
 
-| No | Problem Name | Problem Description |Problems Limit |
-|---|---|---|---|
+<img src='https://img.shields.io/badge/Total_Problems_Count-200-blue?style=flat&labelColor=gray&color=blue'>
+
+| No | Problem Name | Problem Description |
+|---|---|---|
 |1|[Multiple Grid-Matrix Patterns with Loops](https://github.com/JawadSher/Data-Structures-Algorithms-Based-Problems/tree/main/1%20-%20Multiple%20Grid-Matrix%20Patterns%20with%20Loops) | Contains problems related to creating and manipulating grid-matrix patterns using loops. |
 |2|[Bitwise Operators Based Problems](https://github.com/JawadSher/Data-Structures-Algorithms-Based-Problems/tree/main/2%20-%20Bitwise%20Operators%20Based%20Problems) | Focuses on problems that require the use of bitwise operators to solve. |
 |3|[Binary and Decimal Number System Based Problems](https://github.com/JawadSher/Data-Structures-Algorithms-Based-Problems/tree/main/3%20-%20Binary%20and%20Decimal%20Number%20System%20Based%20Problems) | Includes problems related to binary and decimal number systems, conversions, and arithmetic operations. |
 |4|[Arrays Based Problems](https://github.com/JawadSher/Data-Structures-Algorithms-Based-Problems/tree/main/4%20-%20Arrays%20Based%20Problems) | Explore fundamental array-based problems emphasizing linear search techniques and basic array operations for DSA students. |
-|**#**|<p align='center'>**Total Problems**</p>|-------------------------------------------------------------------------------------|<p align='center'>**200**</p>|
+
 
 ## Getting Started
 
@@ -66,8 +68,6 @@ A: Fork the repository, create a new branch, add your solution, and open a pull 
 
 **Q: Can I use other programming languages?**  
 A: Yes, feel free to use any programming language you are comfortable with.
-
-## Project Structure
 
 ## Project Structure
 
