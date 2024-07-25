@@ -1,4 +1,4 @@
-<h1 align='center'>D A T A &nbsp; S T R U C T U R E S &nbsp; &amp; &nbsp; A L G O R I T H M S &nbsp; P R O B L E M S</h1>
+<h1 align='center'>D A T A &nbsp; S T R U C T U R E S &nbsp; &amp; &nbsp; A L G O R I T H M S</h1>
 
 <p align='center'>This repository contains Data Structures & Algorithms based problems to help enhance your competitive programming skills.</p>
 
