@@ -12,7 +12,10 @@ This repository contains Data Structures & Algorithms based problems to help enh
   <img src="https://img.shields.io/github/issues/JawadSher/Data-Structures-Algorithms-Based-Problems" alt="Issues">
   <img src="https://img.shields.io/github/stars/JawadSher/Data-Structures-Algorithms-Based-Problems" alt="Stars">
   <img src="https://img.shields.io/github/forks/JawadSher/Data-Structures-Algorithms-Based-Problems" alt="Forks">
+  <img src='https://img.shields.io/badge/update-daily-blue' alt="update">
 </p>
+
+
 
 ## Introduction
 
