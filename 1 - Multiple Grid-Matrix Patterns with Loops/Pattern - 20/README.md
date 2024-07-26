@@ -1,4 +1,30 @@
-## Source Code Explanation
+# Problem Statement
+
+Write a C++ program to generate and print a right-aligned pattern of numbers based on a user-defined number of rows NNN. Each row in the pattern consists of hyphens (`-`) followed by the row number repeated a certain number of times. The number of hyphens decreases while the number of repeated numbers increases with each successive row.
+
+### Constraints
+
+-   N (number of rows) is a positive integer.
+-  ` 1 ≤ N ≤ 20`
+
+## Example
+
+**Input:**
+
+
+`Enter the value of N: 5` 
+
+**Output:**
+
+
+```
+- - - - 1 
+- - - 2 2 
+- - 3 3 3 
+- 4 4 4 4 
+5 5 5 5 5
+```
+## Problem Solution Explanation
 
 -  **Header Inclusion (`#include <iostream>`)**
     
