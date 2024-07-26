@@ -32,5 +32,5 @@ Welcome to the Grid-Matrix Patterns with Loops repository, where you can find a 
 
 <hr>
 
-Happy Coding
+Happy Coding! 😊
 
