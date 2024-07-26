@@ -1,44 +1,136 @@
+## Problem Statement
+
+The task is to convert a decimal number to its binary representation. For example, if the decimal number is `13`, its binary representation is `1101`.
+
+### Constraints
+
+- The decimal number is a non-negative integer.
+- The binary representation will be expressed as an integer (e.g., `1101` for `13`).
+
+### Examples
+
+1. **Example 1:**
+
+   **Input:**
+
+   `decimal = 13`
+
+   **Output:**
+
+   `1101`
+
+   **Explanation:**
+
+   The decimal number `13` converts to the binary string `"1101"`. The calculation is as follows:
+   - Decimal `13` = \(1 \times 2^3 + 1 \times 2^2 + 0 \times 2^1 + 1 \times 2^0\)
+   - Binary = `"1101"`
+
+2. **Example 2:**
+
+   **Input:**
+
+   `decimal = 10`
+
+   **Output:**
+
+   `1010`
+
+   **Explanation:**
+
+   The decimal number `10` converts to the binary string `"1010"`. The calculation is as follows:
+   - Decimal `10` = \(1 \times 2^3 + 0 \times 2^2 + 1 \times 2^1 + 0 \times 2^0\)
+   - Binary = `"1010"`
+
 ## Source Code Explanation
 
-1.  **Header Inclusions:**
-    
-    -   `<iostream>`: Provides input/output functionality (e.g.,  `cout`).
-    -   `<math.h>` (or `<cmath>` in C++11): Provides mathematical functions (e.g.,  `pow`).
-2.  **`decimal_to_binary` Function:**
-    
-    -   **Parameters:**
-        -   `n`: The decimal number to be converted.
-    -   **Local Variables:**
-        -   `binary`: Stores the binary equivalent of `n` (initialized to 0).
-        -   `i`: Keeps track of the position of the current bit in the binary number (initialized to 0).
-    -   **Loop:**
-        -   The `while (n)` loop continues as long as `n` (the decimal number) is not zero. This ensures all bits are processed.
-        -   Inside the loop:
-            -   `bit = n & 1`: Extracts the least significant bit (LSB) of `n` using the bitwise AND operator (`&`). Numbers with an LSB of 1 are odd, while those with an LSB of 0 are even.
-            -   **Incorrect Calculation:** The current line `binary = (bit * pow(10, i)) + binary;` attempts to add the extracted bit (`bit`) to the binary representation by multiplying it with the power of 10 (`pow(10, i)`) based on its position (`i`). However, binary numbers use base 2, not base 10. This line needs to be corrected to use base 2 for accurate conversion.
-            -   `n = n >> 1`: Right shifts `n` by 1 bit. This effectively removes the processed LSB from `n`, preparing it for the next iteration.
-            -   `i = i + 1`: Increments the position counter (`i`) to account for the next bit to be processed.
-    -   **Return:** The function returns the final binary equivalent stored in `binary`.
-3.  **`main` Function:**
-    
-    -   **Variable Declaration:**
-        -   `decimal`: Stores the decimal number to be converted (initialized to 10000 in this example).
-    -   **Function Call:**
-        -   `output = decimal_to_binary(decimal)`: Calls the `decimal_to_binary` function, passing `decimal` as the argument, and stores the returned binary value in `output`.
-    -   **Output:**
-        -   `cout << "Binary of " << decimal << " is : " << output;`: Prints the message indicating the binary representation of `decimal` along with the calculated binary value (`output`).
+### 1. Header Files and Namespace
 
-## **Correction:**
-
-To accurately convert decimal to binary, the calculation in the `decimal_to_binary` function should use base 2 instead of base 10. Here's the corrected line:
-
+```cpp
+#include <iostream>
+#include <math.h>
+using namespace std;
 ```
-binary = (bit << i) + binary; // Use left shift (<<) and base 2
 
+- **`#include <iostream>`**: Includes the standard input-output stream library for input and output operations.
+- **`#include <math.h>`**: Includes the math library for mathematical functions, specifically `pow()` for power calculations.
+- **`using namespace std;`**: Allows usage of standard C++ symbols and objects in the `std` namespace without prefixing them with `std::`.
+
+### 2. Function `decimal_to_binary`
+
+```cpp
+int decimal_to_binary(int n) {
+    int binary = 0;
+    int i = 0;
+    while (n) {
+        int bit = n & 1;
+        binary = (bit * pow(10, i)) + binary;
+        n = n >> 1;
+        i = i + 1;
+    }
+    return binary;
+}
 ```
-This line left-shifts the extracted bit (`bit`) by `i` positions (based on its significance) and adds it to the `binary` representation.
 
-With this correction, the code will correctly perform decimal-to-binary conversion. 
+#### Parameters
 
-- **Note** 
-  - The current source code is just reliable for converting decimal to binary binary under 1000 range of decimal. Explore another one in his parent repo of this repo.
+- **`int n`**: The decimal number to be converted to binary.
+
+#### Return Type
+
+- **`int`**: Returns the binary representation of the decimal number as an integer.
+
+#### Logic
+
+- **Initialization**:
+  - **`int binary = 0;`**: Initializes `binary` to `0`, which will store the binary representation of the decimal number.
+  - **`int i = 0;`**: Initializes the variable `i` to `0`, which is used to keep track of the position in the binary number (units, tens, hundreds, etc.).
+
+- **While Loop**:
+  ```cpp
+  while (n) {
+      int bit = n & 1;
+      binary = (bit * pow(10, i)) + binary;
+      n = n >> 1;
+      i = i + 1;
+  }
+  ```
+  - **`int bit = n & 1;`**: Extracts the least significant bit of `n` using the bitwise AND operation. This bit represents the current binary digit (0 or 1).
+  - **`binary = (bit * pow(10, i)) + binary;`**:
+    - **`bit * pow(10, i)`**: Places the extracted bit at the correct position (units, tens, etc.) in the binary number.
+    - **`+ binary`**: Adds the newly placed bit to the existing binary value.
+  - **`n = n >> 1;`**: Right-shifts `n` by one position to process the next bit in the subsequent iteration.
+  - **`i = i + 1;`**: Increments `i` to move to the next positional value (e.g., from units to tens).
+
+- **Return**:
+  - **`return binary;`**: Returns the computed binary representation.
+
+### 3. Function `main`
+
+```cpp
+int main() {
+    int decimal = 13;
+    int output = decimal_to_binary(decimal);
+    cout << "Binary of " << decimal << " is : " << output;
+    return 0;
+}
+```
+
+#### Variables
+
+- **`int decimal = 13;`**: Initializes the decimal number to `13`.
+- **`int output = decimal_to_binary(decimal);`**: Calls the `decimal_to_binary` function to convert `decimal` to its binary representation and stores the result in `output`.
+
+#### Output
+
+- **`cout << "Binary of " << decimal << " is : " << output;`**: Prints the original decimal number (`decimal`) and its binary representation (`output`).
+
+---
+
+## Example Execution
+
+For `decimal = 13`, the program executes as follows:
+
+- **`decimal_to_binary(13)`** converts `13` to `1101`.
+- **`cout`** statement prints: `"Binary of 13 is : 1101"`
+
+This C++ program efficiently converts a decimal number to its binary representation using bitwise operations and mathematical functions, demonstrating a practical approach to binary conversion.
