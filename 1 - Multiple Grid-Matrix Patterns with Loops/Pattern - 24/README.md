@@ -2,21 +2,21 @@
 
 Write a C++ program that generates a specific pattern based on the integer input \( N \). The pattern consists of numbers and asterisks arranged in a symmetrical format. Each row of the pattern includes:
 
-1. **Numbers in Ascending Order:** Starting from 1 up to \( N - \text{row} + 1 \).
-2. **Asterisks (`*`):** The number of asterisks is \( 2 \times \text{row} - 1 \).
-3. **Numbers in Descending Order:** Starting from \( N - \text{row} + 1 \) down to 1.
+1. **Numbers in Ascending Order:** Starting from 1 up to (N - row + 1).
+2. **Asterisks (`*`):** The number of asterisks is \( 2 * row - 1).
+3. **Numbers in Descending Order:** Starting from  N - row + 1 down to 1.
 
 ### Input
 
-- An integer \( N \) (1 ≤ \( N \) ≤ 1000), which specifies the number of rows in the pattern.
+- An integerN (1 ≤ 𝑁 ≤ 1000), which specifies the number of rows in the pattern.
 
 ### Output
 
-- Print the pattern with \( N \) rows as described.
+- Print the pattern with 𝑁 rows as described.
 
 ### Constraints
 
-- The integer \( N \) must be between 1 and 1000, inclusive.
+- The integer 𝑁 must be between 1 and 1000, inclusive.
 
 ### Example
 
