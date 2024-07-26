@@ -4,15 +4,15 @@ Welcome to the repository focusing on bitwise operators based problems within th
 
 ## Problem List
 
-| Problem Name                                           | Column Description                                                   |
-|--------------------------------------------------------|----------------------------------------------------------------------|
-| [1 - Check a Number is Odd or Even][prob1]              | Function to check if a number is odd or even using bitwise operators. |
-| [2 - Count the no of 1s in Binary Representation][prob2]| Function to count the number of 1s in the binary representation.      |
-| [3 - Swap Two Numbers with Temporary Variable][prob3]   | Function to swap two numbers without using a temporary variable.      |
-| [4 - Find the Single Non-Duplicate Number][prob4]       | Function to find the single non-duplicate number in an array.         |
-| [5 - Check The Number is Power of Two][prob5]           | Function to check if a number is a power of two using bitwise operators. |
-| [6 - Find the Missing Number][prob6]                    | Function to find the missing number in an array of consecutive integers. |
-| [7 - Convert String Binary Number to Decimal][prob7]     | Function to convert a binary string representation to a decimal integer. |
+| No | Problem Name | Column Description |
+|---|---|---|
+|1| [1 - Check a Number is Odd or Even][prob1]              | Function to check if a number is odd or even using bitwise operators. |
+|2| [2 - Count the no of 1s in Binary Representation][prob2]| Function to count the number of 1s in the binary representation.      |
+|3| [3 - Swap Two Numbers with Temporary Variable][prob3]   | Function to swap two numbers without using a temporary variable.      |
+|4| [4 - Find the Single Non-Duplicate Number][prob4]       | Function to find the single non-duplicate number in an array.         |
+|5| [5 - Check The Number is Power of Two][prob5]           | Function to check if a number is a power of two using bitwise operators. |
+|6| [6 - Find the Missing Number][prob6]                    | Function to find the missing number in an array of consecutive integers. |
+|7| [7 - Convert String Binary Number to Decimal][prob7]     | Function to convert a binary string representation to a decimal integer. |
 
 ## Folder Structure
 
