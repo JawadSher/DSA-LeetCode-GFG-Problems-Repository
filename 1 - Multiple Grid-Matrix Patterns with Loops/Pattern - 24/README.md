@@ -137,7 +137,7 @@ Enter the value of N : 5
   1 * * * * * * * * * 1
   ``` 
 
-### Breakdown of Output Pattern for N=5N = 5N=5:
+### Breakdown of Output Pattern :
 
 -   **Row 1:** Numbers from 1 to 5, then 1 asterisk, then numbers from 5 to 1.
 -   **Row 2:** Numbers from 1 to 4, then 3 asterisks, then numbers from 4 to 1.
