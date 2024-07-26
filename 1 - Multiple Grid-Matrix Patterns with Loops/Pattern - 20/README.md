@@ -26,53 +26,90 @@ Write a C++ program to generate and print a right-aligned pattern of numbers bas
 ```
 ## Problem Solution Explanation
 
--  **Header Inclusion (`#include <iostream>`)**
-    
-    -   The code starts by including the `<iostream>` header file. This header file provides input/output functionalities like `cout` for printing to the console and `cin` for reading input from the console.
--  **Namespace (`using namespace std;`)**
-    
-    -   The `using namespace std;` statement brings the standard C++ namespace `std` into scope. This allows us to use standard C++ objects like `cout`,  `cin`, and `endl` without having to prefix them with `std::`.
--  **Main Function (`int main()`)**
-    
-    -   The `main` function is the entry point of the program. The code execution begins here.
--  **Inputting N (`cout << "Enter the value of N: "; cin >> N;`)**
-    
-    -   The code prompts the user to enter a value for `N` using `cout`.
-    -   The user's input is then stored in the variable `N` using `cin`.
--  **Outer Loop (`while (row <= N)`)**
-    
-    -   The outer loop iterates from `row = 1` to `row <= N`. It controls the number of rows printed in the pattern.
--  **Inner Loop (Printing Spaces) (`while (space < N - row + 1)`)**
-    
-    -   The inner loop iterates from `space = 1` to `space < N - row + 1`. It is used to print the leading hyphens in each row.
-    -   In each iteration, the code prints a hyphen (`-`) followed by a space using `cout << "-" << " ";`.
-    -   The number of spaces printed is determined by the condition `space < N - row + 1`. This ensures that there are enough spaces to form a right triangle of hyphens.
--  **Inner Loop (Printing Numbers) (`while (col <= row)`)**
-    
-    -   The inner loop iterates from `col = 1` to `col <= row`. It is used to print the numbers in each row.
-    -   In each iteration, the code prints the current value of `row` followed by a space using `cout << row << " ";`.
-    -   The number of times the number is printed is determined by the condition `col <= row`. This ensures that the number is printed `row` times in each row.
-- **Printing Newline (`cout << endl;`)**
-    
-    -   After each row is printed, the code moves the cursor to the next line using `cout << endl;`.
-- **Incrementing Row Counter (`row++`)**
-    
-    -   The `row` variable is incremented after each iteration of the outer loop. This ensures that the next row is printed in the subsequent iteration.
--  **Returning 0 (`return 0;`)**
-    
+This C++ program generates a right-aligned pattern based on the input value \( N \). The pattern consists of hyphens (`-`) and numbers, with the number of hyphens decreasing and the number of repeated numbers increasing with each row.
 
--   The `main` function returns 0 to indicate successful program execution.
+Here's a detailed breakdown of the code:
 
-## Example Output (Input: N = 5)
+1. **Header Inclusion and Namespace:**
+    ```cpp
+    #include <iostream>
+    using namespace std;
+    ```
+    - The `#include <iostream>` directive includes the standard input-output stream library.
+    - `using namespace std;` allows the use of standard library names like `cout` and `cin` without needing to prefix them with `std::`.
 
-When the user enters `5` for `N`, the code will print the following pattern:
+2. **Main Function:**
+    ```cpp
+    int main() {
+        int N;
+        cout << "Enter the value of N : ";
+        cin >> N;
+    ```
+    - `int N;` declares an integer variable `N` to store the number of rows for the pattern.
+    - `cout << "Enter the value of N : ";` prompts the user for input.
+    - `cin >> N;` reads the user's input and stores it in `N`.
 
-```
-- - - - 1 
-- - - 2 2 
-- - 3 3 3 
-- 4 4 4 4 
-5 5 5 5 5 
+3. **Outer While Loop (`row` loop):**
+    ```cpp
+    int row = 1;
+    while (row <= N) {
+    ```
+    - Initializes `row` to 1.
+    - The loop continues while `row` is less than or equal to `N`. Each iteration corresponds to a row of the pattern.
 
-```
-I hope this explanation is helpful!
+4. **Inner While Loop (Printing Spaces):**
+    ```cpp
+    int space = 1;
+    while (space < N - row + 1) {
+        cout << "-" << " ";
+        space++;
+    }
+    ```
+    - Initializes `space` to 1.
+    - This loop prints hyphens (`-`) followed by a space. The number of hyphens printed is determined by `N - row + 1`, creating the right alignment of the pattern.
+
+5. **Inner While Loop (Printing Numbers):**
+    ```cpp
+    int col = 1;
+    while (col <= row) {
+        cout << row << " ";
+        col++;
+    }
+    ```
+    - Initializes `col` to 1.
+    - This loop prints the current row number (`row`) followed by a space. The number of times the row number is printed is equal to the current row number.
+
+6. **Newline and Row Increment:**
+    ```cpp
+    cout << endl;
+    row++;
+    ```
+    - After printing all characters for the current row, `cout << endl;` moves to the next line.
+    - `row++` increments the `row` variable to process the next row.
+
+7. **Program Termination:**
+    ```cpp
+    return 0;
+    }
+    ```
+    - `return 0;` indicates that the program finished successfully.
+
+### Time Complexity
+
+- **Outer Loop (`while (row <= N)`):** Runs `N` times.
+- **First Inner Loop (`while (space < N - row + 1)`):** The number of iterations decreases as `row` increases. On average, it runs about \( O(N) \) times for each row.
+- **Second Inner Loop (`while (col <= row)`):** Runs `row` times for each row, where `row` ranges from 1 to `N`. On average, this loop runs \( O(N) \) times for each row.
+
+Thus, the total time complexity is: O(N^2) 
+
+### Space Complexity
+
+- **Variables:** The program uses a constant amount of extra space for variables (`N`, `row`, `space`, `col`). 
+- **No additional data structures** are used.
+
+Therefore, the space complexity is: O(1)
+
+### Summary
+
+- **Time Complexity:** O(N^2) because both inner loops combined contribute to quadratic complexity.
+- **Space Complexity:** O(1) due to the use of a fixed amount of extra space regardless of input size.
