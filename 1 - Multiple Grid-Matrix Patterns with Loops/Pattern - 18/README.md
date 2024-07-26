@@ -1,5 +1,41 @@
-Let's break down the provided C++ code step by step.
-## Source Code Explanation
+# Problem Statement
+
+Write a C++ program that generates a pattern of asterisks (`*`) and hyphens (`-`) based on user input. The pattern consists of `N` rows. Each row starts with a number of hyphens, followed by a number of asterisks. The number of hyphens increases with each subsequent row, while the number of asterisks decreases.
+
+### Constraints
+
+- The input integer `N` must be a positive integer.
+- `1 <= N <= 100` (assuming reasonable size constraints for the pattern)
+
+## Example Output
+
+### Input
+
+```
+Enter the value of N : 5
+```
+
+### Output
+
+```
+* * * * * 
+- * * * * 
+- - * * * 
+- - - * * 
+- - - - *
+```
+
+### Explanation
+
+- For `N = 5`, the output consists of 5 rows:
+  - **Row 1**: All asterisks. There are no hyphens.
+  - **Row 2**: One hyphen followed by 4 asterisks.
+  - **Row 3**: Two hyphens followed by 3 asterisks.
+  - **Row 4**: Three hyphens followed by 2 asterisks.
+  - **Row 5**: Four hyphens followed by 1 asterisk.
+
+
+## Problem Solution Explanation
 
 -  **Include necessary libraries:**
 
