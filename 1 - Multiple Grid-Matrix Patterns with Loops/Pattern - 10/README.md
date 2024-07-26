@@ -12,7 +12,7 @@ Write a program that generates a pattern of characters based on user input. For 
 
 ### Constraints
 
-- **1 ≤ N ≤ 26**
+   `1 ≤ N ≤ 26`
 
 ### Example
 
