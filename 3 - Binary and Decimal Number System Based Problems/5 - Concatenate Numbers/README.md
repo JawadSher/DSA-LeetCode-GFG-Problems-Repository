@@ -1,52 +1,128 @@
-## Source Code Explanation
-1.  **Header Inclusion:**
-    
-    -   `<iostream>`: This header file is included for input/output operations (like `cin` for user input and `cout` for printing).
-2.  **`main` Function:**
-    
-    -   **Variable Declarations:**
-        
-        -   `n`: An integer variable to store the value entered by the user in each iteration of the loop.
-        -   `range`: An integer variable initialized to 5. It acts as a counter to control the loop and collect values for five iterations (assuming you want to concatenate five numbers).
-        -   `ans`: An integer variable initialized to 0. It will store the final concatenated number.
-    -   **Loop:**
-        
-        -   The `while (range)` loop continues as long as `range` is not zero. Since `range` is initially 5, the loop will run five times.
-        -   Inside the loop:
-            -   `cout << "Enter the value of n: ";`: This line prompts the user to enter an integer value.
-            -   `cin >> n;`: This line reads the user's input and stores it in the `n` variable.
-            -   `ans = ans * 10 + n;`: This is the key line for concatenation. It does the following:
-                -   `ans * 10`: Multiplies the current value of `ans` by 10. This effectively shifts the existing digits in `ans` one place to the left, making space for the new digit to be added.
-                -   `+ n`: Adds the newly entered value `n` to the shifted `ans`. This essentially appends `n` to the left side of the existing number in `ans`.
-            -   `range--;`: Decrements the `range` counter by 1 to control the number of loop iterations.
-    -   **Output:**
-        
-        -   `cout << "Concatenated Number is: " << ans;`: This line prints a message to the console displaying the final concatenated number stored in `ans`.
-    -   **Return:**
-        
-        -   `return 0;`: This line indicates successful program termination.
+# Problem Statement
 
-## Example Output
+The task is to read a specified number of integers from the user, concatenate them to form a single integer, and then display the concatenated integer. For instance, if the user inputs the numbers `1`, `2`, `3`, `4`, and `5`, the concatenated integer should be `12345`.
 
-If the user enters the following values:
+### Constraints
 
+- The number of integers to be concatenated is fixed at `5`.
+- Each integer input by the user is a single-digit number.
+
+### Examples
+
+1. **Example 1:**
+
+   **Input:**
+
+   ```
+   Enter the value of n : 1
+   Enter the value of n : 2
+   Enter the value of n : 3
+   Enter the value of n : 4
+   Enter the value of n : 5
+   ```
+
+   **Output:**
+
+   `Concatenated Number is : 12345`
+
+   **Explanation:**
+
+   The integers `1`, `2`, `3`, `4`, and `5` are concatenated to form `12345`.
+
+2. **Example 2:**
+
+   **Input:**
+
+   ```
+   Enter the value of n : 9
+   Enter the value of n : 8
+   Enter the value of n : 7
+   Enter the value of n : 6
+   Enter the value of n : 5
+   ```
+
+   **Output:**
+
+   `Concatenated Number is : 98765`
+
+   **Explanation:**
+
+   The integers `9`, `8`, `7`, `6`, and `5` are concatenated to form `98765`.
+
+## Problem Solution Explanation
+
+### 1. Header File and Namespace
+
+```cpp
+#include <iostream>
+using namespace std;
 ```
-Enter the value of n: 1
-Enter the value of n: 2
-Enter the value of n: 3
-Enter the value of n: 4
-Enter the value of n: 5
 
+- **`#include <iostream>`**: Includes the standard input-output stream library for input and output operations.
+- **`using namespace std;`**: Allows usage of standard C++ symbols and objects in the `std` namespace without prefixing them with `std::`.
+
+### 2. Function `main`
+
+```cpp
+int main() {
+    int n;
+    int range = 5;
+    int ans = 0;
+    while (range) {
+        cout << "Enter the value of n : ";
+        cin >> n;
+        ans = ans * 10 + n;
+        range--;
+    }
+    cout << "Concatenated Number is : " << ans;
+
+    return 0;
+}
 ```
 
-The output will be:
+#### Variables
 
-```
-Concatenated Number is: 12345
+- **`int n;`**: Variable to store the user input.
+- **`int range = 5;`**: Initializes `range` to `5`, indicating the number of integers to read.
+- **`int ans = 0;`**: Initializes `ans` to `0`, which will store the concatenated result.
 
-```
+#### Logic
 
-**Note:**
+- **While Loop**:
+  ```cpp
+  while (range) {
+      cout << "Enter the value of n : ";
+      cin >> n;
+      ans = ans * 10 + n;
+      range--;
+  }
+  ```
+  - **`cout << "Enter the value of n : ";`**: Prompts the user to enter a value.
+  - **`cin >> n;`**: Reads the user input and stores it in `n`.
+  - **`ans = ans * 10 + n;`**:
+    - **`ans * 10`**: Shifts the digits of `ans` one position to the left (i.e., multiplies by 10).
+    - **`+ n`**: Adds the new digit `n` to the rightmost position of `ans`.
+  - **`range--;`**: Decreases the `range` by `1` for each iteration, eventually terminating the loop after 5 inputs.
 
--   This code assumes the user will enter valid integer values. You could add error handling to check for invalid input.
--   The size of the concatenated number depends on the initial value of `range`. To concatenate a different number of values, you'd need to adjust `range` accordingly.
+- **Output**:
+  ```cpp
+  cout << "Concatenated Number is : " << ans;
+  ```
+  - Prints the concatenated integer stored in `ans`.
+
+---
+
+## Example Execution
+
+For the user inputs `1`, `2`, `3`, `4`, and `5`, the program executes as follows:
+
+- **`ans = 0`**
+  - **Iteration 1**: `n = 1`, `ans = 0 * 10 + 1 = 1`
+  - **Iteration 2**: `n = 2`, `ans = 1 * 10 + 2 = 12`
+  - **Iteration 3**: `n = 3`, `ans = 12 * 10 + 3 = 123`
+  - **Iteration 4**: `n = 4`, `ans = 123 * 10 + 4 = 1234`
+  - **Iteration 5**: `n = 5`, `ans = 1234 * 10 + 5 = 12345`
+
+- **Output**: `Concatenated Number is : 12345`
+
+This C++ program reads a fixed number of single-digit integers from the user and concatenates them into a single integer using basic arithmetic operations and a loop.
