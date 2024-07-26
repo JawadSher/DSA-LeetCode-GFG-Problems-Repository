@@ -1,84 +1,112 @@
-Let's break down and explain the C++ code snippet for you.
+# Problem Statement
 
-## Source Code Explanation
--  **Include Header and Namespace**:
-    
-    ```#include<iostream>```
-    
-    ```using namespace std;``` 
-    
-    -   This includes the `<iostream>` standard library which provides basic input and output operations (`cout`, `cin`). `using namespace std;` allows us to use `cout` and `cin` without prefixing `std::`.
--  **Main Function**:
-    
-    
-    ```
-    int main() {
-      int n;
-      cout << "Enter the value of n : ";
-      cin >> n;
-    ``` 
-    
-    -   This defines the `main()` function, which is the entry point of the program. It declares an integer variable `n` to store user input.
--  **Input**:
-    
-    
-	  ```cout << "Enter the value of n : ";```
-     
-	  ```cin >> n;``` 
-    
-    -   Prompts the user to enter a value for `n` and stores it in the variable `n`.
--  **Initialization**:
-    
-    
-     `int row = 1;` 
-    
-    -   Initializes the variable `row` to 1. `row` will track the current row number in the output pattern.
--  **Nested While Loop for Output**:
-    
-    
-     ```
-     while (row <= n) {
-        int col = 1;
-        while (col <= row) {
-          cout << row - col + 1 << " ";
-          col = col + 1;
-        }
-        cout << endl;
-        row = row + 1;
-      }
-   ``` 
-    
-    -   **Outer Loop (`while (row <= n) { ... }`)**:
-        
-        -   Executes `n` times, once for each row from 1 up to `n`.
-        -   `row` increments after each row is printed.
-    -   **Inner Loop (`while (col <= row) { ... }`)**:
-        
-        -   Executes `row` times for each row, starting from 1 up to the current value of `row`.
-        -   `col` increments after printing each number.
-    -   **Printing**:
-        
-        -   `cout << row - col + 1 << " ";` prints the value of `row - col + 1` followed by a space for each iteration of the inner loop.
-        -   `row - col + 1` calculates the number to print in each position of the current row. For the first column (`col = 1`), it prints `row`, for the second column (`col = 2`), it prints `row - 1`, and so on, effectively printing numbers in descending order from `row` to `1`.
-        -   After printing all numbers for the current `row`, `cout << endl;` moves to the next line to start a new row.
--  **Output**:
-    
-    -   After the execution of the nested loops, the program prints a pattern of numbers where each row `i` contains numbers in descending order from `i` down to `1`.
+Write a program that generates a pattern of numbers based on the user input. For a given integer `n`, the program should print `n` rows where each row `i` contains numbers in descending order starting from `i` down to `1`.
 
-## Example Output (for `n = 5`):
+### Input
+
+- **An integer `n`**: The number of rows to be printed. 
+
+### Output
+
+- Print `n` rows where each row `i` contains numbers in descending order starting from `i` down to `1`.
+
+### Constraints
+
+- **1 ≤ n ≤ 100**
+
+### Example
+
+#### Input
 ```
 Enter the value of n : 5
+```
+
+#### Output
+```
 1 
 2 1 
 3 2 1 
 4 3 2 1 
 5 4 3 2 1
-``` 
+```
 
-### Summary:
+## Problem Solution Explanation
 
--   This program takes an integer input `n` from the user.
--   It then prints `n` rows where each row `i` contains numbers in descending order starting from `i` down to `1`.
--   The program uses nested while loops to achieve this output, with `row` controlling the number of rows, `col` controlling the number of numbers per row, and the expression `row - col + 1` calculating the value to print at each position in the pattern.
+### Include Header and Namespace
 
-This code snippet demonstrates basic control flow using loops and input/output operations in C++, and it showcases how to generate a specific pattern of numbers based on user input.
+```cpp
+#include <iostream>
+using namespace std;
+```
+
+- **`#include <iostream>`**: Includes the `<iostream>` standard library which provides basic input and output operations (`cout`, `cin`).
+- **`using namespace std;`**: Allows us to use standard library objects and functions (like `cout` and `cin`) without prefixing them with `std::`.
+
+### Main Function
+
+```cpp
+int main() {
+    int n;
+    cout << "Enter the value of n : ";
+    cin >> n;
+```
+
+- **`int main()`**: Entry point of the program.
+- **`int n;`**: Declares an integer variable `n` to store the user input.
+
+### Input
+
+```cpp
+cout << "Enter the value of n : ";
+cin >> n;
+```
+
+- **`cout << "Enter the value of n : ";`**: Prompts the user to enter a value for `n`.
+- **`cin >> n;`**: Reads the integer value entered by the user and stores it in `n`.
+
+### Initialization
+
+```cpp
+int row = 1;
+```
+
+- **`int row = 1;`**: Initializes the variable `row` to 1. This variable will be used to track the current row number in the output pattern.
+
+### Nested While Loop for Output
+
+```cpp
+while (row <= n) {
+    int col = 1;
+    while (col <= row) {
+        cout << row - col + 1 << " ";
+        col = col + 1;
+    }
+    cout << endl;
+    row = row + 1;
+}
+```
+
+- **Outer Loop (`while (row <= n) { ... }`)**:
+    - Executes `n` times, once for each row from 1 up to `n`.
+    - **`row`** increments after each row is printed.
+
+- **Inner Loop (`while (col <= row) { ... }`)**:
+    - Executes `row` times for each row, starting from 1 up to the current value of `row`.
+    - **`col`** increments after printing each number.
+
+- **Printing**:
+    - **`cout << row - col + 1 << " ";`**: Prints the value of `row - col + 1` followed by a space for each iteration of the inner loop.
+    - **`row - col + 1`**: Calculates the number to print. For each column in the current row, it prints numbers in descending order from `row` down to `1`.
+
+- **After the Inner Loop**:
+    - **`cout << endl;`**: Moves to the next line to start a new row.
+    - **`row = row + 1;`**: Increments the `row` variable to proceed to the next row.
+
+### Output
+
+- After executing the nested loops, the program prints a pattern where each row `i` contains numbers in descending order starting from `i` down to `1`.
+
+---
+
+This code snippet demonstrates basic control flow using loops and input/output operations in C++, and it shows how to generate a specific pattern of numbers based on user input.
+
