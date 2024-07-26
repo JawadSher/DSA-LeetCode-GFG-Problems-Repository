@@ -1,8 +1,4 @@
-Let's break down the provided C++ code snippet, including the problem statement, constraints, examples, and a detailed explanation of the code.
-
----
-
-## Problem Statement
+# Problem Statement
 
 Write a C++ program that takes an integer input \( N \) and prints a triangular pattern of characters. The pattern should start from 'D' at the top row and decrement by one character for each subsequent row, with each row containing more characters.
 
