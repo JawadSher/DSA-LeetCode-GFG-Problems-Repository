@@ -1,54 +1,172 @@
-##  Source Code Explanation
+# Problem Statement
 
-This C++ code calculates the two's complement of a negative decimal number entered by the user. Here's a step-by-step breakdown of what the code does:
+The task is to compute the one's complement and two's complement of a negative integer in binary representation. Given an integer `n`, this program first converts `-n` to its binary representation, then computes the one's complement (inverts all bits), and finally calculates the two's complement (adds 1 to the one's complement).
 
-**1. Header Inclusions:**
+### Constraints
 
--   `<iostream>`: Included for standard input/output operations (e.g.,  `cin` for user input and `cout` for printing).
--   `<string>`: Included for working with strings, as the binary representation and one's complement are stored as strings.
+- The input integer `n` is a negative integer.
+- The program assumes that the input `n` fits within typical integer limits in C++.
 
-**2. `main` Function:**
+### Examples
 
--   **Variable Declarations:**
-    
-    -   `n`: An integer variable to store the decimal number entered by the user.
-    -   `binary`: An empty string (`""`) to store the binary representation of the negative `n`.
-    -   `oneComp`: An empty string (`""`) to store the one's complement of the binary representation.
-    -   `carry`: An integer variable to keep track of the carry during the two's complement calculation.
--   **User Input:**
-    
-    -   `cin >> n;`: Prompts the user to enter a decimal number and stores it in the `n` variable.
--   **Negate Input:**
-    
-    -   `n = n * -1;`: Negates the input value in `n` to ensure it's a negative number for which the two's complement will be calculated.
--   **Convert to Binary (Improved):**
-    
-    -   This part is not explicitly shown in the code, but it's assumed that the code has a function (or logic) to convert the negative `n` to its two's complement binary representation and store it in the `binary` string. Common approaches for this conversion involve repeated bitwise AND with 1 and right shift operations.
--   **One's Complement Calculation:**
-    
-    -   `for (char c : binary) { ... }`: This loop iterates through each character (`c`) in the `binary` string (representing the binary digits).
-        -   `int bit = c - '0';`: Converts the character (`c`) from ASCII (assuming it represents a binary digit) to its integer equivalent (0 or 1) by subtracting the ASCII code of '0'.
-        -   `oneComp += (bit == 0 ? '1' : '0');`: Appends the one's complement of the current bit (`bit`) to the `oneComp` string. If the current bit is 0, it becomes 1 in the one's complement; otherwise, it remains 0.
--   **Two's Complement Calculation:**
-    
-    -   `carry = 1;`: Initializes the `carry` variable with 1, which is used for calculating the carry bit during the two's complement addition.
-    -   `for (int i = oneComp.size() - 1; i >= 0; i--) { ... }`: This loop iterates from the least significant bit (LSB) to the most significant bit (MSB) of the one's complement stored in `oneComp`.
-        -   `int bit = oneComp[i] - '0' + carry;`:
-            -   Converts the current character (`oneComp[i]`) from ASCII to its integer equivalent (0 or 1).
-            -   Adds the current `carry` value to this bit.
-        -   `oneComp[i] = (bit % 2) + '0';`:
-            -   Takes the modulo by 2 (remainder after division by 2) of the `bit` to get the result bit (0 or 1) for the two's complement.
-            -   Converts the result bit back to an ASCII character ('0' or '1') and stores it back in the same position (`i`) of the `oneComp` string.
-        -   `carry = bit / 2;`: Updates the `carry` for the next iteration based on the original `bit` value before the modulo operation. This handles potential carry propagation to the next bit.
--   **Output:**
-    
-    -   `cout << oneComp;`: Prints the final two's complement representation stored in the `oneComp` string.
--   **Return:**
-    
-    -   `return 0;`: Indicates successful program termination.
+1. **Example 1:**
 
-**Key Points:**
+   **Input:**
 
--   The code assumes a separate function or logic exists to convert the negative `n` to its binary representation before calculating the one's complement and two's complement.
--   The one's complement is calculated by inverting each bit in the binary representation.
--   The two's complement is calculated by adding 1 to the one's complement, handling potential carry propagation using the `carry` variable.
+   ```
+   -5
+   ```
+
+   **Output:**
+
+   `1011`
+
+   **Explanation:**
+
+   - The binary representation of `5` is `101`.
+   - The one's complement of `101` is `010`.
+   - Adding 1 to the one's complement results in `011`, which is the two's complement of `-5`.
+
+2. **Example 2:**
+
+   **Input:**
+
+   ```
+   -3
+   ```
+
+   **Output:**
+
+   `110`
+   
+   **Explanation:**
+
+   - The binary representation of `3` is `11`.
+   - The one's complement of `11` is `00`.
+   - Adding 1 to the one's complement results in `01`, which is the two's complement of `-3`.
+
+## Problem Solution Explanation
+
+### 1. Header Files and Namespace
+
+```cpp
+#include <iostream>
+#include <string>
+using namespace std;
+```
+
+- **`#include <iostream>`**: Includes the standard input-output stream library for input and output operations.
+- **`#include <string>`**: Includes the string library for string manipulation.
+- **`using namespace std;`**: Allows usage of standard C++ symbols and objects in the `std` namespace without prefixing them with `std::`.
+
+### 2. Function `main`
+
+```cpp
+int main() {
+    int n;
+    cin >> n;
+    n = n * -1;
+    string binary = "";
+
+    while (n) {
+        int bit = n & 1;
+        binary = to_string(bit) + binary;
+        n = n >> 1;
+    }
+
+    string oneComp = "";
+    for (char c : binary) {
+        int bit = c - '0';
+        oneComp += (bit == 0 ? '1' : '0');
+    }
+
+    int carry = 1;
+    for (int i = oneComp.size() - 1; i >= 0; i--) {
+        int bit = oneComp[i] - '0' + carry;
+        oneComp[i] = (bit % 2) + '0';
+        carry = bit / 2;
+    }
+
+    cout << oneComp;
+
+    return 0;
+}
+```
+
+#### Input Reading
+
+- **`int n; cin >> n;`**: Reads an integer `n` from the user input.
+
+#### Conversion to Positive
+
+- **`n = n * -1;`**: Converts `n` to its positive equivalent. Since `n` is negative, multiplying by `-1` yields its positive value.
+
+#### Binary Conversion
+
+- **Binary Computation Loop**:
+  ```cpp
+  while (n) {
+      int bit = n & 1;
+      binary = to_string(bit) + binary;
+      n = n >> 1;
+  }
+  ```
+  - **`int bit = n & 1;`**: Extracts the least significant bit of `n`.
+  - **`binary = to_string(bit) + binary;`**: Prepend the bit to the binary string.
+  - **`n = n >> 1;`**: Right shifts `n` to process the next bit.
+
+#### One's Complement Calculation
+
+- **`string oneComp = "";`**: Initializes an empty string for storing the one's complement.
+- **One's Complement Loop**:
+  ```cpp
+  for (char c : binary) {
+      int bit = c - '0';
+      oneComp += (bit == 0 ? '1' : '0');
+  }
+  ```
+  - **`int bit = c - '0';`**: Converts character `c` to its integer value.
+  - **`oneComp += (bit == 0 ? '1' : '0');`**: Inverts the bit (0 to 1, and 1 to 0).
+
+#### Two's Complement Calculation
+
+- **Two's Complement Calculation Loop**:
+  ```cpp
+  int carry = 1;
+  for (int i = oneComp.size() - 1; i >= 0; i--) {
+      int bit = oneComp[i] - '0' + carry;
+      oneComp[i] = (bit % 2) + '0';
+      carry = bit / 2;
+  }
+  ```
+  - **`carry = 1;`**: Initializes carry to 1 for the addition.
+  - **`int bit = oneComp[i] - '0' + carry;`**: Adds the carry to the current bit.
+  - **`oneComp[i] = (bit % 2) + '0';`**: Updates the bit in the result.
+  - **`carry = bit / 2;`**: Updates the carry for the next bit.
+
+#### Output
+
+- **`cout << oneComp;`**: Prints the two's complement of the negative integer.
+
+---
+
+## Example Execution
+
+For an input `-13`, the program executes as follows:
+
+1. **Conversion to Positive**:
+   - `n = 13`
+
+2. **Binary Conversion**:
+   - Binary representation of `13` is `1101`.
+
+3. **One's Complement**:
+   - One's complement of `1101` is `0010`.
+
+4. **Two's Complement**:
+   - Adding 1 to `0010` results in `0011`.
+
+5. **Output**:
+   - `0011` is printed as the two's complement of `-13`.
+
+This program efficiently computes the one's and two's complement of a negative integer by first converting it to binary and then applying bitwise operations.
