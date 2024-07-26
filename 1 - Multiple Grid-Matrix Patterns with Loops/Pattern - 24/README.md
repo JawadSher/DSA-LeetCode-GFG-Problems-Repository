@@ -47,7 +47,7 @@ Write a C++ program that generates a specific pattern based on the integer input
 
 - **Variable Declaration and User Input:**
 
-    ```cpp
+    ```
     int N;
     cout << "Enter the value of N: ";
     cin >> N;
@@ -58,7 +58,7 @@ Write a C++ program that generates a specific pattern based on the integer input
 
 - **Outer While Loop:**
 
-    ```cpp
+    ```
     int row = 1;
     while (row <= N) {
     ```
@@ -67,7 +67,7 @@ Write a C++ program that generates a specific pattern based on the integer input
 
 - **First Inner While Loop (Print Numbers in Ascending Order):**
 
-    ```cpp
+    ```
     int col = 1;
     while (col <= N - row + 1) {
       cout << col << " ";
@@ -80,7 +80,7 @@ Write a C++ program that generates a specific pattern based on the integer input
 
 - **Second Inner While Loop (Print Asterisks):**
 
-    ```cpp
+    ```
     int space = 2 * row - 1;
     while (space > 1) {
       cout << "*" << " ";
@@ -94,7 +94,7 @@ Write a C++ program that generates a specific pattern based on the integer input
 
 - **Third Inner While Loop (Print Numbers in Descending Order):**
 
-    ```cpp
+    ```
     int col2 = N - row + 1;
     while (col2 >= 1) {
       cout << col2 << " ";
@@ -107,7 +107,7 @@ Write a C++ program that generates a specific pattern based on the integer input
 
 - **End of Row:**
 
-    ```cpp
+    ```
     cout << endl;
     row++;
     ```
@@ -116,7 +116,7 @@ Write a C++ program that generates a specific pattern based on the integer input
 
 - **End of Program:**
 
-    ```cpp
+    ```
     return 0;
     ```
 
