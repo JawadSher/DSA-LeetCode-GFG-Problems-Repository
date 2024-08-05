@@ -23,7 +23,7 @@ The repository includes a range of problems, many of which are inspired by LeetC
 
 ## Problem Set Overview
 
-<img src='https://img.shields.io/badge/Total_Problems_Count-200-blue?style=flat&labelColor=gray&color=blue'>
+<img src='https://img.shields.io/badge/Total_Problems_Count-89-blue?style=flat&labelColor=gray&color=blue'>
 
 | No | Problem Name | Problem Description |
 |---|---|---|
@@ -31,6 +31,7 @@ The repository includes a range of problems, many of which are inspired by LeetC
 |2|[Bitwise Operators Based Problems](https://github.com/JawadSher/Data-Structures-Algorithms-Based-Problems/tree/main/2%20-%20Bitwise%20Operators%20Based%20Problems) | Focuses on problems that require the use of bitwise operators to solve. |
 |3|[Arrays Based Problems](https://github.com/JawadSher/Data-Structures-Algorithms-Based-Problems/tree/main/4%20-%20Arrays%20Based%20Problems) | Explore fundamental array-based problems emphasizing linear search techniques and basic array operations for DSA students. |
 |4|[Binary and Decimal Number System Based Problems](https://github.com/JawadSher/Data-Structures-Algorithms-Based-Problems/tree/main/3%20-%20Binary%20and%20Decimal%20Number%20System%20Based%20Problems) | Includes problems related to binary and decimal number systems, conversions, and arithmetic operations. |
+|5|[Binary Search Algorithms Problems](https://github.com/JawadSher/Data-Structures-Algorithms-Based-Problems/tree/main/5%20-%20Binary%20Search%20Algorithm%20Based%20Problems) | Includes all Binary Search Algorithms based problems solutions and explained in detail.|
 
 ## Getting Started
 
