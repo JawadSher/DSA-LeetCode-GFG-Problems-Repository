@@ -6,7 +6,7 @@ Welcome to the Binary Search Algorithm Problems repository! This collection feat
 
 <img src="https://islandclass.org/wp-content/uploads/2023/12/binary-search-animation_vu.gif" width='100%' align='center'>
 
-![Total Problems](https://img.shields.io/badge/Total_Problems-37-brightgreen)
+![Total Problems](https://img.shields.io/badge/Total_Problems-37-blue)
 ![Last Updated](https://img.shields.io/badge/Last_Updated-August_2024-orange)
 ![GitHub Stars](https://img.shields.io/github/stars/JawadSher/Data-Structures-Algorithms-Based-Problems?style=social)
 ![GitHub Forks](https://img.shields.io/github/forks/JawadSher/Data-Structures-Algorithms-Based-Problems?style=social)
