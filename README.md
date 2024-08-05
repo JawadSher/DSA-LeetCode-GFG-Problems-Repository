@@ -13,6 +13,7 @@
   <img src="https://img.shields.io/github/stars/JawadSher/Data-Structures-Algorithms-Based-Problems" alt="Stars">
   <img src="https://img.shields.io/github/forks/JawadSher/Data-Structures-Algorithms-Based-Problems" alt="Forks">
   <img src='https://img.shields.io/badge/update-daily-blue' alt="update">
+  <img src="https://komarev.com/ghpvc/?username=JawadSher&label=Views&color=blueviolet&style=flat" alt="Views">
 </p>
 
 ## Introduction
