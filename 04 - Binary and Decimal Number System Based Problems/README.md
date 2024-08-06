@@ -1,4 +1,4 @@
-<h1 align='center'>Binary & Decimal Number Based Problems</h1>
+<h1 align='center'>Binary - & - Decimal - Number - Based - Problems</h1>
 
 This repository contains code for various problems related to data structures and algorithms, specifically focusing on binary and decimal number systems.
 
