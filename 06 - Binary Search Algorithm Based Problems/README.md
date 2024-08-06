@@ -1,6 +1,15 @@
 <h1 align='center'>BINARY - SEARCH - ALGORITHM - PROBLEMS</h1>
 
+<p align='center'>
+  
+<img src="https://img.shields.io/badge/Last_Updated-August_2024-orange" alt="Last Updated">
+<img src="https://img.shields.io/github/stars/JawadSher/Data-Structures-Algorithms-Based-Problems?style=social" alt="GitHub Stars">
+<img src="https://img.shields.io/github/forks/JawadSher/Data-Structures-Algorithms-Based-Problems?style=social" alt="GitHub Forks">
+<img src="https://img.shields.io/github/languages/top/JawadSher/Data-Structures-Algorithms-Based-Problems" alt="Languages">
+<img src="https://img.shields.io/github/issues/JawadSher/Data-Structures-Algorithms-Based-Problems" alt="Issues">
+<img src="https://img.shields.io/github/issues-pr/JawadSher/Data-Structures-Algorithms-Based-Problems" alt="Pull Requests">
 
+</p>
 
 Welcome to the Binary Search Algorithm Problems repository! This collection features problems that utilize the binary search algorithm to solve a variety of challenges. Each problem is linked to its respective LeetCode page for easy access.
 
@@ -12,15 +21,9 @@ Welcome to the Binary Search Algorithm Problems repository! This collection feat
 <br>
 
 
+## Repository Content
 ![Total Problems](https://img.shields.io/badge/Total_Problems-37-blue)
-![Last Updated](https://img.shields.io/badge/Last_Updated-August_2024-orange)
-![GitHub Stars](https://img.shields.io/github/stars/JawadSher/Data-Structures-Algorithms-Based-Problems?style=social)
-![GitHub Forks](https://img.shields.io/github/forks/JawadSher/Data-Structures-Algorithms-Based-Problems?style=social)
-![Languages](https://img.shields.io/github/languages/top/JawadSher/Data-Structures-Algorithms-Based-Problems)
-![Issues](https://img.shields.io/github/issues/JawadSher/Data-Structures-Algorithms-Based-Problems)
-![Pull Requests](https://img.shields.io/github/issues-pr/JawadSher/Data-Structures-Algorithms-Based-Problems)
 
-### Repository Content
 | No | Problem Name | Problem Description | Leetcode |
 |----|--------------|---------------------|------|
 | 1  | [Aggressive Cows Problem](https://github.com/JawadSher/Data-Structures-Algorithms-Based-Problems/tree/main/06%20-%20Binary%20Search%20Algorithm%20Based%20Problems/Aggressive%20Cows%20Problem) | Find the maximum minimum distance between cows. | [Link](https://leetcode.com/problems/aggressive-cows/) |
