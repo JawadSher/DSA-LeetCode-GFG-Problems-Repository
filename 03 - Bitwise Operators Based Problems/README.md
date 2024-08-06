@@ -1,4 +1,4 @@
-# Bitwise Operators Based Problems in Data Structures and Algorithms
+<h1 align='center'>BITWISE - OPERATORS - PROBLEMS</h1>
 
 Welcome to the repository focusing on bitwise operators based problems within the domain of Data Structures and Algorithms (DSA). This repository contains various problems that utilize bitwise operations to solve common algorithmic challenges.
 
