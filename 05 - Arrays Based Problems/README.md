@@ -1,4 +1,4 @@
-<h1 align='center'>Arrays Based Problems</h1>
+<h1 align='center'>Arrays - Based - Problems</h1>
 This repository contains solutions to various array-based problems commonly encountered in data structures and algorithms.
 
 
