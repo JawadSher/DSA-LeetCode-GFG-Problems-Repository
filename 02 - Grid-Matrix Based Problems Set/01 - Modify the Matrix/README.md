@@ -6,10 +6,6 @@
 
 ## Problem Explanation
 
-### **Modify the Matrix Problem on LeetCode**
-
-**Problem Statement:**
-
 You are given a matrix where some elements are `-1` and others are non-negative integers. Your task is to replace each `-1` in the matrix with the maximum value in the corresponding column.
 
 **Example:**
