@@ -1,8 +1,19 @@
 <h1 align='center'>BINARY - & - DECIMAL - NUMBERS - PROBLEMS</h1>
 
+<p align='center'>
+  <img src="https://img.shields.io/github/repo-size/JawadSher/Data-Structures-Algorithms-Based-Problems" alt="Repository Size">
+  <img src="https://img.shields.io/github/watchers/JawadSher/Data-Structures-Algorithms-Based-Problems?style=social" alt="Watchers">
+  <img src="https://img.shields.io/github/issues/JawadSher/Data-Structures-Algorithms-Based-Problems" alt="Issues">
+  <img src="https://img.shields.io/github/stars/JawadSher/Data-Structures-Algorithms-Based-Problems" alt="Stars">
+  <img src="https://img.shields.io/github/contributors/JawadSher/Data-Structures-Algorithms-Based-Problems" alt="Contributors">
+  <img src="https://img.shields.io/github/issues-pr/JawadSher/Data-Structures-Algorithms-Based-Problems" alt="Pull Requests">
+</p>
+
 This repository contains code for various problems related to data structures and algorithms, specifically focusing on binary and decimal number systems.
 
 ## Table Content
+<img src="https://img.shields.io/badge/problems%20count-07-blue" alt="Problem Count">
+
 | No | Problem | Description |
 |---|---|---|
 | 1 | [Decimal to Binary Conversion](https://github.com/JawadSher/Data-Structures-Algorithms-Based-Problems/tree/main/04%20-%20Binary%20and%20Decimal%20Number%20System%20Based%20Problems/1%20-%20Decimal%20to%20Binary%20Conversion) | Code for converting decimal numbers to binary. |
