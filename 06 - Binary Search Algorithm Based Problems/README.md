@@ -18,8 +18,6 @@ Welcome to the Binary Search Algorithm Problems repository! This collection feat
 </p>
 
 <br>
-<br>
-
 
 ## Repository Content
 ![Total Problems](https://img.shields.io/badge/Total_Problems-37-blue)
