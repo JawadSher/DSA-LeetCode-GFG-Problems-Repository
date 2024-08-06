@@ -30,10 +30,10 @@ The folder `2 - Bitwise Operators Based Problems` contains subfolders for each o
 
 This repository aims to provide comprehensive solutions to fundamental algorithmic problems using bitwise operators. Feel free to explore each problem folder to enhance your understanding of these concepts.
 
-[prob1]: https://github.com/JawadSher/Data-Structures-Algorithms-Based-Problems/tree/main/2%20-%20Bitwise%20Operators%20Based%20Problems/1%20-%20Check%20a%20Number%20is%20Odd%20or%20Even
-[prob2]: https://github.com/JawadSher/Data-Structures-Algorithms-Based-Problems/tree/main/2%20-%20Bitwise%20Operators%20Based%20Problems/2%20-%20Count%20the%20no%20of%201s%20in%20Binary%20Representation
-[prob3]: https://github.com/JawadSher/Data-Structures-Algorithms-Based-Problems/tree/main/2%20-%20Bitwise%20Operators%20Based%20Problems/3%20-%20Swap%20Two%20Numbers%20with%20Temporary%20Variable
-[prob4]: https://github.com/JawadSher/Data-Structures-Algorithms-Based-Problems/tree/main/2%20-%20Bitwise%20Operators%20Based%20Problems/4%20-%20Find%20the%20Single%20Non-Duplicate%20Number
-[prob5]: https://github.com/JawadSher/Data-Structures-Algorithms-Based-Problems/tree/main/2%20-%20Bitwise%20Operators%20Based%20Problems/5%20-%20Check%20The%20Number%20is%20Power%20of%20Two
-[prob6]: https://github.com/JawadSher/Data-Structures-Algorithms-Based-Problems/tree/main/2%20-%20Bitwise%20Operators%20Based%20Problems/6%20-%20Find%20the%20Missing%20Number
-[prob7]: https://github.com/JawadSher/Data-Structures-Algorithms-Based-Problems/tree/main/2%20-%20Bitwise%20Operators%20Based%20Problems/7%20-%20Convert%20String%20Binary%20Number%20to%20Decimal
+[prob1]: https://github.com/JawadSher/Data-Structures-Algorithms-Based-Problems/tree/main/03%20-%20Bitwise%20Operators%20Based%20Problems/1%20-%20Check%20a%20Number%20is%20Odd%20or%20Even
+[prob2]: https://github.com/JawadSher/Data-Structures-Algorithms-Based-Problems/tree/main/03%20-%20Bitwise%20Operators%20Based%20Problems/2%20-%20Count%20the%20no%20of%201s%20in%20Binary%20Representation
+[prob3]: https://github.com/JawadSher/Data-Structures-Algorithms-Based-Problems/tree/main/03%20-%20Bitwise%20Operators%20Based%20Problems/3%20-%20Swap%20Two%20Numbers%20with%20Temporary%20Variable
+[prob4]: https://github.com/JawadSher/Data-Structures-Algorithms-Based-Problems/tree/main/03%20-%20Bitwise%20Operators%20Based%20Problems/4%20-%20Find%20the%20Single%20Non-Duplicate%20Number
+[prob5]: https://github.com/JawadSher/Data-Structures-Algorithms-Based-Problems/tree/main/03%20-%20Bitwise%20Operators%20Based%20Problems/5%20-%20Check%20The%20Number%20is%20Power%20of%20Two
+[prob6]: https://github.com/JawadSher/Data-Structures-Algorithms-Based-Problems/tree/main/03%20-%20Bitwise%20Operators%20Based%20Problems/6%20-%20Find%20the%20Missing%20Number
+[prob7]: https://github.com/JawadSher/Data-Structures-Algorithms-Based-Problems/tree/main/03%20-%20Bitwise%20Operators%20Based%20Problems/7%20-%20Convert%20String%20Binary%20Number%20to%20Decimal
