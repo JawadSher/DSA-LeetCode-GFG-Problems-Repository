@@ -1,4 +1,4 @@
-<h1 align='center'>Grid and Matrix Algorithms Problems</h1>
+<h1 align='center'>Grid - and - Matrix - Algorithms - Problems</h1>
 Welcome to the Grid-Matrix Patterns with Loops repository, where you can find a collection of various grid and matrix patterns implemented using loops. These patterns are commonly used in coding interviews and practice problems to strengthen your understanding of loops, nested loops, and array manipulations. Each pattern is represented with a concise description and a link to its implementation.
 
 ## Repository Content
