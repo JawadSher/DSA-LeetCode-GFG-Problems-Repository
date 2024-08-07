@@ -16,10 +16,11 @@
 <img src='https://lh3.googleusercontent.com/PL2T2TGcVkIRp0p3ETnVYzCcK5uWYFXRBOfN2AiszzktqtC4IijlIqkVkwbqJ-BFJGkliobx7GlwpFncMgk2MlKGswFJBcqN_0ADFuV8mjO9xE991MDc-pwq38I6qKghYItD8oBQgQlfaJv6n4ycr7PtcI3FSeLxag0vIN3oDcrjt48mFI4HSefodw'>
 
 ## Problems List
-<img src="https://img.shields.io/badge/problems%20count-02-blue" alt="Problem Count">
+<img src="https://img.shields.io/badge/problems%20count-03-blue" alt="Problem Count">
 
 | No  | Problem Name | Description | LeetCode |
 |-----|--------------|-------------|----------|
 | 01  | [Modify the Matrix](https://github.com/JawadSher/Data-Structures-Algorithms-Based-Problems/tree/main/02%20-%20Grid-Matrix%20Based%20Problems%20Set/01%20-%20Modify%20the%20Matrix) | Replace the minimum values in each column with the maximum values of the same column. | [Link](https://leetcode.com/problems/modify-the-matrix/description/) |
 | 02 |[Island Perimeter](https://github.com/JawadSher/DSA-LeetCode-Problems-Repository/tree/main/02%20-%20Grid-Matrix%20Based%20Problems%20Set/02%20-%20Island%20Perimeter)|Computes the perimeter of an island in a grid.|[Link](https://leetcode.com/problems/island-perimeter/)|
+| 03 |[Reshape The Matrix](https://github.com/JawadSher/DSA-LeetCode-Problems-Repository/tree/main/02%20-%20Grid-Matrix%20Based%20Problems%20Set/03%20-%20Reshape%20the%20Matrix)|Reshape a matrix to new dimensions or return the original.|[Link](https://leetcode.com/problems/reshape-the-matrix/)|
 
