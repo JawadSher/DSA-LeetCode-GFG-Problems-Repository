@@ -20,5 +20,6 @@
 
 | No  | Problem Name | Description | LeetCode |
 |-----|--------------|-------------|----------|
-| 01   | [Modify the Matrix](https://github.com/JawadSher/Data-Structures-Algorithms-Based-Problems/tree/main/02%20-%20Grid-Matrix%20Based%20Problems%20Set/01%20-%20Modify%20the%20Matrix) | Replace the minimum values in each column with the maximum values of the same column. | [Link](https://leetcode.com/problems/modify-the-matrix/description/) |
+| 01  | [Modify the Matrix](https://github.com/JawadSher/Data-Structures-Algorithms-Based-Problems/tree/main/02%20-%20Grid-Matrix%20Based%20Problems%20Set/01%20-%20Modify%20the%20Matrix) | Replace the minimum values in each column with the maximum values of the same column. | [Link](https://leetcode.com/problems/modify-the-matrix/description/) |
+| 02 |[Island Perimeter](https://github.com/JawadSher/DSA-LeetCode-Problems-Repository/tree/main/02%20-%20Grid-Matrix%20Based%20Problems%20Set/02%20-%20Island%20Perimeter)|Computes the perimeter of an island in a grid.|[Link](https://leetcode.com/problems/island-perimeter/)|
 
