@@ -24,7 +24,7 @@ The repository includes a range of problems, many of which are inspired by LeetC
 
 ## Problem Set Overview
 
-<img src='https://img.shields.io/badge/Total_Problems_Count-90-blue?style=flat&labelColor=gray&color=blue'>
+<img src='https://img.shields.io/badge/Total_Problems_Count-91-blue?style=flat&labelColor=gray&color=blue'>
 
 | No | Problem Name | Problem Description |
 |---|---|---|
