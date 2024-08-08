@@ -26,7 +26,7 @@ The repository includes a range of problems, many of which are inspired by LeetC
 
 <img src='https://img.shields.io/badge/Total_Problems_Count-92-blue?style=flat&labelColor=gray&color=blue'>
 
-| No | Problem Name | Problem Description |
+| No | Problem Category | Description |
 |---|---|---|
 |01|[Grid-Matrix Patterns no-leetcode ](https://github.com/JawadSher/Data-Structures-Algorithms-Based-Problems/tree/main/01%20-%20Grid-Matrix%20Patterns%20no-leetcode) | Contains problems related to creating and manipulating grid-matrix patterns using loops just for beginners. |
 |02|[Grid-Matrix Based Problems Set](https://github.com/JawadSher/Data-Structures-Algorithms-Based-Problems/tree/main/02%20-%20Grid-Matrix%20Based%20Problems%20Set)|Collection of grid and matrix problems for algorithmic analysis and practice.|
