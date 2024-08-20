@@ -11,7 +11,7 @@
 
 </p>
 
-Welcome to the Binary Search Algorithm Problems repository! This collection features problems that utilize the binary search algorithm to solve a variety of challenges. Each problem is linked to its respective LeetCode page for easy access.
+<p align='center'>Welcome to the Binary Search Algorithm Problems repository! This collection features problems that utilize the binary search algorithm to solve a variety of challenges. Each problem is linked to its respective LeetCode page for easy access.</p>
 
 <p align='center'>
 <img src="https://islandclass.org/wp-content/uploads/2023/12/binary-search-animation_vu.gif" width='90%' align='center'>
