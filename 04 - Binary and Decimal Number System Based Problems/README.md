@@ -9,9 +9,10 @@
   <img src="https://img.shields.io/github/issues-pr/JawadSher/Data-Structures-Algorithms-Based-Problems" alt="Pull Requests">
 </p>
 
-This repository contains code for various problems related to data structures and algorithms, specifically focusing on binary and decimal number systems.
+<p align='center'>This repository contains code for various problems related to data structures and algorithms, specifically focusing on binary and decimal number systems.
+</p>
 
-## Table Content
+## Repository Content
 <img src="https://img.shields.io/badge/problems%20count-07-blue" alt="Problem Count">
 
 | No | Problem | Description |
@@ -33,6 +34,5 @@ This repository contains code for various problems related to data structures an
 
 Feel free to explore the code within each folder and understand the different approaches implemented for these problems.
 
-<hr>
-
-Happy Coding
+---
+Happy coding! 😊
