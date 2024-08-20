@@ -1,7 +1,10 @@
 <h1 align='center'>GRID - AND - MATRIX - PATTERNS</h1>
-Welcome to the Grid-Matrix Patterns with Loops repository, where you can find a collection of various grid and matrix patterns implemented using loops. These patterns are commonly used in coding interviews and practice problems to strengthen your understanding of loops, nested loops, and array manipulations. Each pattern is represented with a concise description and a link to its implementation.
+
+<p align='center'>Welcome to the Grid-Matrix Patterns with Loops repository, where you can find a collection of various grid and matrix patterns implemented using loops. These patterns are commonly used in coding interviews and practice problems to strengthen your understanding of loops, nested loops, and array manipulations. Each pattern is represented with a concise description and a link to its implementation.</p>
 
 ## Repository Content
+![Problem Count](https://img.shields.io/badge/problems%20count-24-blue)
+
 | No | Patterns | Description |
 |---|---|---|
 | 1 | [Repeating Number Grid](https://github.com/JawadSher/Data-Structures-Algorithms-Based-Problems/tree/main/01%20-%20Grid-Matrix%20Patterns%20no-leetcode/Pattern%20-%201) | Grid or matrix with repeating sequences of numbers in each row.|
