@@ -61,6 +61,7 @@
 | 35 | [Special Array with X elements Greater than or Equals to X](https://github.com/JawadSher/Data-Structures-Algorithms-Based-Problems/tree/main/06%20-%20Binary%20Search%20Algorithm%20Based%20Problems/Special%20Array%20with%20X%20elements%20Greater%20than%20or%20Equals%20to%20X) | Determine if there are exactly X elements greater than or equal to X. | [Link](https://leetcode.com/problems/special-array-with-x-elements-greater-than-or-equal-to-x/) |
 | 36 | [Successful Pairs of Spells and Potions](https://github.com/JawadSher/Data-Structures-Algorithms-Based-Problems/tree/main/06%20-%20Binary%20Search%20Algorithm%20Based%20Problems/Successful%20Pairs%20of%20Spells%20and%20Potions) | Find successful pairs of spells and potions. | [Link](https://leetcode.com/problems/successful-pairs-of-spells-and-potions/) |
 | 37 | [is Array Sorted and Rotated](https://github.com/JawadSher/Data-Structures-Algorithms-Based-Problems/tree/main/06%20-%20Binary%20Search%20Algorithm%20Based%20Problems/is%20Array%20Sorted%20and%20Rotated) | Check if an array is sorted and rotated. | [Link](https://leetcode.com/problems/check-if-array-is-sorted-and-rotated/) |
+| 38 | [Kth Largest Element in an Array](https://github.com/JawadSher/DSA-LeetCode-Problems-Repository/tree/main/06%20-%20Binary%20Search%20Algorithm%20Based%20Problems/Kth%20Largest%20Element%20in%20an%20Array) |Find the kth largest element in an unsorted array.| [Link](https://leetcode.com/problems/kth-largest-element-in-an-array/)
 
 ---
 Happy Coding! 😊
