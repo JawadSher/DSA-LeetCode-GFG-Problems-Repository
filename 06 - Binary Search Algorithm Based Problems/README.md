@@ -63,6 +63,7 @@
 | 37 | [is Array Sorted and Rotated](https://github.com/JawadSher/Data-Structures-Algorithms-Based-Problems/tree/main/06%20-%20Binary%20Search%20Algorithm%20Based%20Problems/is%20Array%20Sorted%20and%20Rotated) | Check if an array is sorted and rotated. | [Link](https://leetcode.com/problems/check-if-array-is-sorted-and-rotated/) |
 | 38 | [Kth Largest Element in an Array](https://github.com/JawadSher/DSA-LeetCode-Problems-Repository/tree/main/06%20-%20Binary%20Search%20Algorithm%20Based%20Problems/Kth%20Largest%20Element%20in%20an%20Array) |Find the kth largest element in an unsorted array.| [Link](https://leetcode.com/problems/kth-largest-element-in-an-array/) |
 | 39 | [Binary Search](https://github.com/JawadSher/DSA-LeetCode-Problems-Repository/tree/main/06%20-%20Binary%20Search%20Algorithm%20Based%20Problems/BInary%20Search) | Find the target element in `nums` vector using binary search algorithm. | [Link](https://leetcode.com/problems/binary-search/) |
+| 40 | [Search Insert Position](https://github.com/JawadSher/DSA-LeetCode-Problems-Repository/tree/main/06%20-%20Binary%20Search%20Algorithm%20Based%20Problems/Search%20Insert%20Position) | Given a sorted array, find the index where a target should be inserted to maintain order. | [Link](https://leetcode.com/problems/search-insert-position/description/) |
 
 ---
 Happy Coding! 😊
