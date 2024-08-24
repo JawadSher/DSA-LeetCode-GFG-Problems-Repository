@@ -64,6 +64,8 @@
 | 38 | [Kth Largest Element in an Array](https://github.com/JawadSher/DSA-LeetCode-Problems-Repository/tree/main/06%20-%20Binary%20Search%20Algorithm%20Based%20Problems/Kth%20Largest%20Element%20in%20an%20Array) |Find the kth largest element in an unsorted array.| [Link](https://leetcode.com/problems/kth-largest-element-in-an-array/) |
 | 39 | [Binary Search](https://github.com/JawadSher/DSA-LeetCode-Problems-Repository/tree/main/06%20-%20Binary%20Search%20Algorithm%20Based%20Problems/BInary%20Search) | Find the target element in `nums` vector using binary search algorithm. | [Link](https://leetcode.com/problems/binary-search/) |
 | 40 | [Search Insert Position](https://github.com/JawadSher/DSA-LeetCode-Problems-Repository/tree/main/06%20-%20Binary%20Search%20Algorithm%20Based%20Problems/Search%20Insert%20Position) | Given a sorted array, find the index where a target should be inserted to maintain order. | [Link](https://leetcode.com/problems/search-insert-position/description/) |
+| 41 | [First Bad Version](https://github.com/JawadSher/DSA-LeetCode-Problems-Repository/tree/main/06%20-%20Binary%20Search%20Algorithm%20Based%20Problems/First%20Bad%20Version) | Given `n` versions and `isBadVersion(version)`, find the first bad version using binary search. | [Link](https://leetcode.com/problems/first-bad-version/description/) |
+
 
 ---
 Happy Coding! 😊
