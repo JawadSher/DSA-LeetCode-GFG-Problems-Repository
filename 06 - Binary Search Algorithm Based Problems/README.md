@@ -20,7 +20,7 @@
 <br>
 
 ## Repository Content
-![Total Problems](https://img.shields.io/badge/Total_Problems-37-blue)
+![Total Problems](https://img.shields.io/badge/Total_Problems-42-blue)
 
 | No | Problem Name | Problem Description | Leetcode |
 |----|--------------|---------------------|------|
