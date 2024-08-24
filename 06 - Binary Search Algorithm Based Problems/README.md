@@ -65,6 +65,9 @@
 | 39 | [Binary Search](https://github.com/JawadSher/DSA-LeetCode-Problems-Repository/tree/main/06%20-%20Binary%20Search%20Algorithm%20Based%20Problems/BInary%20Search) | Find the target element in `nums` vector using binary search algorithm. | [Link](https://leetcode.com/problems/binary-search/) |
 | 40 | [Search Insert Position](https://github.com/JawadSher/DSA-LeetCode-Problems-Repository/tree/main/06%20-%20Binary%20Search%20Algorithm%20Based%20Problems/Search%20Insert%20Position) | Given a sorted array, find the index where a target should be inserted to maintain order. | [Link](https://leetcode.com/problems/search-insert-position/description/) |
 | 41 | [First Bad Version](https://github.com/JawadSher/DSA-LeetCode-Problems-Repository/tree/main/06%20-%20Binary%20Search%20Algorithm%20Based%20Problems/First%20Bad%20Version) | Given `n` versions and `isBadVersion(version)`, find the first bad version using binary search. | [Link](https://leetcode.com/problems/first-bad-version/description/) |
+| 42 | [Minimum Operations to Exceed Threshold Value I](https://github.com/JawadSher/DSA-LeetCode-Problems-Repository/tree/main/06%20-%20Binary%20Search%20Algorithm%20Based%20Problems/Minimum%20Operations%20to%20Exceed%20Threshold%20Value%20I) | Given a list of integers and a threshold value, find the minimum number of operations needed to exceed the threshold value. Each operation involves selecting a number from the list and adding it to a cumulative total. | [Link](https://leetcode.com/problems/minimum-operations-to-exceed-threshold-value-i/) |
+
+
 
 
 ---
