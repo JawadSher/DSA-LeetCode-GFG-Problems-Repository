@@ -34,6 +34,7 @@ The repository includes a range of problems, many of which are inspired by LeetC
 |04|[Binary and Decimal Number System Based Problems](https://github.com/JawadSher/Data-Structures-Algorithms-Based-Problems/tree/main/04%20-%20Binary%20and%20Decimal%20Number%20System%20Based%20Problems) | Includes problems related to binary and decimal number systems, conversions, and arithmetic operations. |
 |05|[Arrays Based Problems](https://github.com/JawadSher/Data-Structures-Algorithms-Based-Problems/tree/main/05%20-%20Arrays%20Based%20Problems) | Explore fundamental array-based problems emphasizing linear search techniques and basic array operations for DSA students. |
 |06|[Binary Search Algorithms Problems](https://github.com/JawadSher/Data-Structures-Algorithms-Based-Problems/tree/main/06%20-%20Binary%20Search%20Algorithm%20Based%20Problems) | Includes all Binary Search Algorithms based problems solutions and explained in detail.|
+| 07 | [Sorting Algorithms Problems](https://github.com/JawadSher/DSA-LeetCode-Problems-Repository/tree/main/07%20-%20Sorting%20Algorithms%20Problems) | Includes a collection of problems covering different sorting algorithms from GFG and LeetCode.|
 
 ## Getting Started
 
