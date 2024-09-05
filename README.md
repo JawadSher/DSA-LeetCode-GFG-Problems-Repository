@@ -3,6 +3,8 @@
 <p align='center'>This repository contains Data Structures & Algorithms based problems to help enhance your competitive programming skills.</p>
 
 <p align="center">
+  <img src="https://img.shields.io/badge/Total_Problems_Count-92-blue?style=flat&labelColor=gray&color=blue&logo=LeetCode&logoColor=white">
+  <img src="https://img.shields.io/badge/Total_Problems_Count-92-blue?style=flat&labelColor=gray&color=blue&logo=GeeksforGeeks&logoColor=white">
   <img src="https://img.shields.io/github/license/JawadSher/Data-Structures-Algorithms-Based-Problems" alt="License">
   <img src="https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat" alt="Contributions">
   <img src="https://img.shields.io/github/languages/count/JawadSher/Data-Structures-Algorithms-Based-Problems" alt="Languages Count">
