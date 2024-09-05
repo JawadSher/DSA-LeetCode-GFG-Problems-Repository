@@ -3,8 +3,6 @@
 <p align='center'>This repository contains Data Structures & Algorithms based problems to help enhance your competitive programming skills.</p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Total_Problems_Count-92-blue?style=flat&labelColor=gray&color=blue&logo=LeetCode&logoColor=white">
-  <img src="https://img.shields.io/badge/Total_Problems_Count-92-blue?style=flat&labelColor=gray&color=blue&logo=GeeksforGeeks&logoColor=white">
   <img src="https://img.shields.io/github/license/JawadSher/Data-Structures-Algorithms-Based-Problems" alt="License">
   <img src="https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat" alt="Contributions">
   <img src="https://img.shields.io/github/languages/count/JawadSher/Data-Structures-Algorithms-Based-Problems" alt="Languages Count">
@@ -25,8 +23,9 @@ Welcome to the Data Structures & Algorithms repository! This repository is dedic
 The repository includes a range of problems, many of which are inspired by LeetCode challenges. I am committed to updating this repository daily with new problems and solutions to keep it current and relevant. The goal is to solve LeetCode problems, document the solutions, and continuously improve the content available here.
 
 ## Problem Set Overview
-
-<img src='https://img.shields.io/badge/Total_Problems_Count-92-blue?style=flat&labelColor=gray&color=blue'>
+<p><img src="https://img.shields.io/badge/leetcode%20problems%20count-92-blue?style=flat&labelColor=gray&color=blue&logo=LeetCode&logoColor=white">
+<img src="https://img.shields.io/badge/geekforgeeks%20problems%20count-92-blue?style=flat&labelColor=gray&color=blue&logo=GeeksforGeeks&logoColor=white">
+<img src='https://img.shields.io/badge/total%20problems%20count-92-blue?style=flat&labelColor=gray&color=blue'></p>
 
 | No | Problem Category | Description |
 |---|---|---|
