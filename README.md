@@ -25,6 +25,7 @@ The repository includes a range of problems, many of which are inspired by LeetC
 ## Problem Set Overview
 <p><img src="https://img.shields.io/badge/leetcode%20problems%20count-92-blue?style=flat&labelColor=gray&color=blue&logo=LeetCode&logoColor=white">
 <img src="https://img.shields.io/badge/geekforgeeks%20problems%20count-92-blue?style=flat&labelColor=gray&color=blue&logo=GeeksforGeeks&logoColor=white">
+<img src="https://img.shields.io/badge/self%20made%20problems%20count-92-blue?style=flat&labelColor=gray&color=blue&logo=code&logoColor=white">
 <img src='https://img.shields.io/badge/total%20problems%20count-92-blue?style=flat&labelColor=gray&color=blue'></p>
 
 | No | Problem Category | Description |
