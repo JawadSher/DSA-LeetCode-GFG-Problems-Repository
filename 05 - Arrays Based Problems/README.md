@@ -12,7 +12,7 @@
 <p align='center'>This repository contains solutions to various array-based problems commonly encountered in data structures and algorithms.</p>
 
 ## Repository Content
-<img src="https://img.shields.io/badge/problems%20count-20-blue" alt="Problem Count"> 
+<img src="https://img.shields.io/badge/problems%20count-19-blue" alt="Problem Count"> 
 
 | No | Problem Name | Description | LeetCode | GFG |
 |---|---|---|---|---|
@@ -31,11 +31,10 @@
 | 13 | [Unique Number of Occurences](https://github.com/JawadSher/Data-Structures-Algorithms-Based-Problems/tree/main/05%20-%20Arrays%20Based%20Problems/Unique%20Number%20of%20Occurences) | Determine if all elements in an array have unique occurrences. | [Link](https://leetcode.com/problems/unique-number-of-occurrences/) | Non | 
 | 14 | [Find out the Intersected Elements in Array](https://github.com/JawadSher/Data-Structures-Algorithms-Based-Problems/tree/main/05%20-%20Arrays%20Based%20Problems/Find%20out%20the%20Intersected%20Elements%20in%20Array) | Find common elements between two arrays. | [Link](https://leetcode.com/problems/intersection-of-two-arrays/) | Non | 
 | 15 | [Majority Element](https://github.com/JawadSher/DSA-LeetCode-Problems-Repository/tree/main/05%20-%20Arrays%20Based%20Problems/Majority%20Elements) | Identify the element that appears more than half the time in an array using the Boyer-Moore Voting Algorithm. | [Link](https://leetcode.com/problems/majority-element/) | Non | 
-| 16 | [Reverse String](https://github.com/JawadSher/DSA-LeetCode-Problems-Repository/tree/main/05%20-%20Arrays%20Based%20Problems/Reverse%20String) |Reverse the order of characters in a given list in place. Modify the list directly without using extra space. | [Link](https://leetcode.com/problems/reverse-string/) | Non | 
-| 17 | [Merge Sorted Array](https://github.com/JawadSher/DSA-LeetCode-Problems-Repository/tree/main/05%20-%20Arrays%20Based%20Problems/Merge%20Sorted%20Array) | Merge two sorted arrays into one sorted array in-place. | [Link](https://leetcode.com/problems/merge-sorted-array/) | Non | 
-| 18 | [Move Zeros](https://github.com/JawadSher/DSA-LeetCode-Problems-Repository/tree/main/05%20-%20Arrays%20Based%20Problems/Move%20Zeros) | Move all zeros to the end of the array while maintaining the order of non-zero elements. | [Link](https://leetcode.com/problems/move-zeroes/) | Non | 
-| 19 | [Rotate Array](https://github.com/JawadSher/DSA-LeetCode-Problems-Repository/tree/main/05%20-%20Arrays%20Based%20Problems/Rotate%20Array) | Rotate the elements of an array to the right by a given number of steps. | [Link](https://leetcode.com/problems/rotate-array/description/) | Non |
-| 20 | [Sum of Two Numbers Represented as Arrays](https://github.com/JawadSher/DSA-LeetCode-Problems-Repository/tree/main/05%20-%20Arrays%20Based%20Problems/Sum%20of%20Two%20Numbers%20Represented%20as%20Arrays) | Compute the sum of two large numbers represented as arrays. | Non | [Link](https://www.geeksforgeeks.org/problems/sum-of-two-numbers-represented-as-arrays3110/1) |
+| 16 | [Merge Sorted Array](https://github.com/JawadSher/DSA-LeetCode-Problems-Repository/tree/main/05%20-%20Arrays%20Based%20Problems/Merge%20Sorted%20Array) | Merge two sorted arrays into one sorted array in-place. | [Link](https://leetcode.com/problems/merge-sorted-array/) | Non | 
+| 17 | [Move Zeros](https://github.com/JawadSher/DSA-LeetCode-Problems-Repository/tree/main/05%20-%20Arrays%20Based%20Problems/Move%20Zeros) | Move all zeros to the end of the array while maintaining the order of non-zero elements. | [Link](https://leetcode.com/problems/move-zeroes/) | Non | 
+| 18 | [Rotate Array](https://github.com/JawadSher/DSA-LeetCode-Problems-Repository/tree/main/05%20-%20Arrays%20Based%20Problems/Rotate%20Array) | Rotate the elements of an array to the right by a given number of steps. | [Link](https://leetcode.com/problems/rotate-array/description/) | Non |
+| 19 | [Sum of Two Numbers Represented as Arrays](https://github.com/JawadSher/DSA-LeetCode-Problems-Repository/tree/main/05%20-%20Arrays%20Based%20Problems/Sum%20of%20Two%20Numbers%20Represented%20as%20Arrays) | Compute the sum of two large numbers represented as arrays. | Non | [Link](https://www.geeksforgeeks.org/problems/sum-of-two-numbers-represented-as-arrays3110/1) |
  
 ---
 Happy Coding! 😊
