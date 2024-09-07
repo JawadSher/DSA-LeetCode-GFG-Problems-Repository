@@ -12,7 +12,11 @@
 <p align='center'>This repository contains solutions to various array-based problems commonly encountered in data structures and algorithms.</p>
 
 ## Repository Content
-<img src="https://img.shields.io/badge/problems%20count-19-blue" alt="Problem Count"> 
+<p>
+<img src="https://img.shields.io/badge/LEETCODE%20problems%20count-18-blue" alt="Problem Count"> 
+<img src="https://img.shields.io/badge/GEEKSFORGEEKS%20problems%20count-1-blue" alt="Problem Count">
+<img src="https://img.shields.io/badge/total%20problems%20count-19-blue" alt="Problem Count"> 
+</p>
 
 | No | Problem Name | Description | LeetCode | GFG |
 |---|---|---|---|---|
