@@ -15,7 +15,7 @@
 <p>
 <img src="https://img.shields.io/badge/LEETCODE%20problems%20count-18-blue" alt="Problem Count"> 
 <img src="https://img.shields.io/badge/GEEKSFORGEEKS%20problems%20count-1-blue" alt="Problem Count">
-<img src="https://img.shields.io/badge/total%20problems%20count-19-blue" alt="Problem Count"> 
+<img src="https://img.shields.io/badge/total%20problems%20count-20-blue" alt="Problem Count"> 
 </p>
 
 | No | Problem Name | Description | LeetCode | GFG |
@@ -39,6 +39,7 @@
 | 17 | [Move Zeros](https://github.com/JawadSher/DSA-LeetCode-Problems-Repository/tree/main/05%20-%20Arrays%20Based%20Problems/Move%20Zeros) | Move all zeros to the end of the array while maintaining the order of non-zero elements. | [Link](https://leetcode.com/problems/move-zeroes/) | Non | 
 | 18 | [Rotate Array](https://github.com/JawadSher/DSA-LeetCode-Problems-Repository/tree/main/05%20-%20Arrays%20Based%20Problems/Rotate%20Array) | Rotate the elements of an array to the right by a given number of steps. | [Link](https://leetcode.com/problems/rotate-array/description/) | Non |
 | 19 | [Sum of Two Numbers Represented as Arrays](https://github.com/JawadSher/DSA-LeetCode-Problems-Repository/tree/main/05%20-%20Arrays%20Based%20Problems/Sum%20of%20Two%20Numbers%20Represented%20as%20Arrays) | Compute the sum of two large numbers represented as arrays. | Non | [Link](https://www.geeksforgeeks.org/problems/sum-of-two-numbers-represented-as-arrays3110/1) |
+| 20 | [Print Like a Wave 2D Array](https://github.com/JawadSher/DSA-LeetCode-GFG-Problems-Repository/tree/main/05%20-%20Arrays%20Based%20Problems/Print%20Like%20a%20Wave%202D%20Array) | Print a 2D array in a wave pattern, alternating column traversal direction. | Non | Non
  
 ---
 Happy Coding! 😊
