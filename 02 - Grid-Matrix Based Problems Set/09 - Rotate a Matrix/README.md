@@ -78,11 +78,11 @@ using namespace std;
 class Solution
 {   
     public:
-    void rotateby90(vector<vector<int> >& matrix, int n) 
+    void rotateby90(vector<vector<int> >& arr, int n) 
     { 
         for(int i = 0; i < n; i++){
             for(int j = i + 1; j < n; j++){
-                swap(matrix[i][j], matrix[j][i]);
+                swap(arr[i][j], arr[j][i]);
             }
         }
         
@@ -92,7 +92,7 @@ class Solution
             int bottom = n - 1;
             
             while(top < bottom){
-                swap(matrix[top][j], matrix[bottom][j]);
+                swap(arr[top][j], arr[bottom][j]);
                 top++;
                 bottom--;
             }
@@ -102,29 +102,27 @@ class Solution
 
 int main() {
     int t;
-    cin>>t;
-    
-    while(t--) 
-    {
-        int n;
-        cin>>n;
-        vector<vector<int> > matrix(n); 
-
-        for(int i=0; i<n; i++)
-        {
-            matrix[i].assign(n, 0);
-            for( int j=0; j<n; j++)
-            {
-                cin>>matrix[i][j];
+    cin >> t;
+    while (t--) {
+        int n, x;
+        cin >> n;
+        vector<vector<int>> arr;
+        for (int i = 0; i < n; i++) {
+            vector<int> a;
+            for (int j = 0; j < n; j++) {
+                cin >> x;
+                a.push_back(x);
+            }
+            arr.push_back(a);
+        }
+        Solution ob;
+        ob.rotateMatrix(arr, n);
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < n; j++) {
+                cout << arr[i][j] << " ";
             }
         }
-
-        Solution ob;
-        ob.rotateby90(matrix, n);
-        for (int i = 0; i < n; ++i)
-            for (int j = 0; j < n; ++j)
-                cout<<matrix[i][j]<<" ";
-        cout<<endl;
+        cout << "\n";
     }
     return 0;
 }
@@ -132,13 +130,13 @@ int main() {
 
 ## Problem Solution Explanation
 
-1. **Transpose the Matrix**
+1. **Transpose the Array**
    - **Outer loop:** `for(int i = 0; i < n; i++)`
      - The outer loop iterates through each row.
    - **Inner loop:** `for(int j = i + 1; j < n; j++)`
-     - The inner loop starts from the diagonal element `(i, i)` and moves to the right to transpose the matrix. This avoids double swaps.
-   - **Swap operation:** `swap(matrix[i][j], matrix[j][i])`
-     - This swaps elements at position `(i, j)` and `(j, i)` to transpose the matrix.
+     - The inner loop starts from the diagonal element `(i, i)` and moves to the right to transpose the array. This avoids double swaps.
+   - **Swap operation:** `swap(arr[i][j], arr[j][i])`
+     - This swaps elements at position `(i, j)` and `(j, i)` to transpose the array.
 
    After this loop, the matrix is transposed.
 
@@ -148,14 +146,14 @@ int main() {
    - **Reverse logic (top and bottom pointers):**
      - Two pointers, `top` (initially 0) and `bottom` (initially \(n - 1\)), are used to reverse the elements in each column.
      - Inside the `while` loop, we swap the top and bottom elements of the column, moving inward until all elements are reversed.
-   - **Swap operation:** `swap(matrix[top][j], matrix[bottom][j])`
+   - **Swap operation:** `swap(arr[top][j], arr[bottom][j])`
      - This swaps the top element with the bottom element for each column.
 
-   After reversing each column, the matrix is rotated by 90 degrees anti-clockwise.
+   After reversing each column, the array is rotated by 90 degrees anti-clockwise.
 
 ### Example Walkthrough
 
-Let’s go through an example where the input matrix is:
+Let’s go through an example where the input array is:
 
 ```
 1 2 3
@@ -163,7 +161,7 @@ Let’s go through an example where the input matrix is:
 7 8 9
 ```
 
-1. **Step 1: Transpose the Matrix**
+1. **Step 1: Transpose the Array**
 
    - Swap the elements to transpose:
      - Swap (1, 2) and (2, 1) → 4 and 2
@@ -189,12 +187,12 @@ Let’s go through an example where the input matrix is:
      9 6 3
      ```
 
-The matrix is now rotated 90 degrees anti-clockwise.
+The array is now rotated 90 degrees anti-clockwise.
 
 ### Time and Space Complexity
 
 - **Time Complexity:** \(O(n^2)\)
-  - Transposing the matrix takes \(O(n^2)\) because each element is visited once.
+  - Transposing the array takes \(O(n^2)\) because each element is visited once.
   - Reversing each column also takes \(O(n^2)\) because each column has \(n\) elements, and there are \(n\) columns.
   - Thus, the total time complexity is \(O(n^2)\).
 
