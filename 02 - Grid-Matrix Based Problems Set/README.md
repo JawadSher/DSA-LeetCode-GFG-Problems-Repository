@@ -15,7 +15,7 @@
 
 <img src='https://lh3.googleusercontent.com/PL2T2TGcVkIRp0p3ETnVYzCcK5uWYFXRBOfN2AiszzktqtC4IijlIqkVkwbqJ-BFJGkliobx7GlwpFncMgk2MlKGswFJBcqN_0ADFuV8mjO9xE991MDc-pwq38I6qKghYItD8oBQgQlfaJv6n4ycr7PtcI3FSeLxag0vIN3oDcrjt48mFI4HSefodw'>
 
-## Problems List
+## Repository Content
 <p>
 <img src="https://img.shields.io/badge/LEETCODE%20problems%20count-6-blue" alt="Problem Count"> 
 <img src="https://img.shields.io/badge/GEEKSFORGEEKS%20problems%20count-3-blue" alt="Problem Count">
