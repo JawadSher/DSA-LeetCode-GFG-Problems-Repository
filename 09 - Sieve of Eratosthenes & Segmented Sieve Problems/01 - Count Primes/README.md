@@ -1,4 +1,4 @@
-<h1 align='center'></h1>
+<h1 align='center'>Count - Primes</h1>
 
 ## Problem Statement
 
