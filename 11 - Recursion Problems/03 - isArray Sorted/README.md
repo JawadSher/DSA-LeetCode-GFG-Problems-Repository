@@ -1,4 +1,4 @@
-<h1 align='center'></h1>
+<h1 align='center'>isArray - Sorted</h1>
 
 ## Problem Statement
 
