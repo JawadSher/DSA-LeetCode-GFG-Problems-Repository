@@ -344,5 +344,68 @@ int main() {
 - **Space Complexity**:
   - The space complexity is \(O(n)\) due to the additional space required for the temporary `left` and `right` arrays. This additional space is needed to hold the split arrays during the merging process.
 
+
+### Stability of Merge Sort Algorithm
+**Merge Sort** is a **stable sorting algorithm** by nature. Stability in a sorting algorithm means that if two elements have the same value, their relative order is preserved in the sorted output as it was in the input.
+
+### Why Merge Sort is Stable:
+
+Merge Sort works by dividing the array into smaller subarrays, sorting these subarrays, and then merging them back together. During the merge process, if two elements are equal, the element that appears first in the original array will also appear first in the merged array. This ensures the stability of the algorithm.
+
+#### Example of Stability in Merge Sort:
+
+Consider the array:
+```
+[2a, 3, 2b, 1]
+```
+where `2a` and `2b` are two distinct elements with the same value but different identities (let's say they represent different objects with the same sorting key).
+
+After applying **Merge Sort**, the sorted array will be:
+```
+[1, 2a, 2b, 3]
+```
+Here, the relative order of `2a` and `2b` is preserved (i.e., `2a` appears before `2b`), ensuring the sort is **stable**.
+
+### How Stability is Achieved in Merge Sort:
+
+- When merging two sorted halves, if elements from both halves are equal, the element from the left subarray is chosen before the one from the right subarray.
+- This "left-first" rule ensures that elements that appear earlier in the input array retain their relative order when they are merged back.
+
+### Example Walkthrough:
+
+Let's consider an array:
+
+```
+[5a, 2, 5b, 1]
+```
+Where `5a` and `5b` are two different elements with the same value.
+
+1. **Step 1**: The array is divided into two halves:
+   - Left: `[5a, 2]`
+   - Right: `[5b, 1]`
+
+2. **Step 2**: Recursively sort both halves:
+   - Sort the left half: `[2, 5a]`
+   - Sort the right half: `[1, 5b]`
+
+3. **Step 3**: Merge the two sorted halves:
+   - Compare `2` and `1`: since `1` is smaller, it comes first.
+   - Compare `2` and `5b`: since `2` is smaller, it comes next.
+   - Compare `5a` and `5b`: since `5a` appears earlier in the original array, it comes before `5b`.
+
+Final sorted array (stable):
+```
+[1, 2, 5a, 5b]
+```
+
+The relative order of `5a` and `5b` is preserved, making Merge Sort **stable**.
+
+### Conclusion:
+
+- Merge Sort is inherently stable because, during the merging process, elements with the same value retain their original relative order.
+- The stability of Merge Sort is guaranteed by ensuring that when two equal elements are encountered during the merge, the one from the left subarray (which came earlier) is placed before the one from the right subarray.
+
+
 ### Summary
 Merge Sort is an efficient, stable sorting algorithm that works well for large datasets. It’s particularly useful when the array cannot fit into memory and requires sorting via external storage methods.
+
