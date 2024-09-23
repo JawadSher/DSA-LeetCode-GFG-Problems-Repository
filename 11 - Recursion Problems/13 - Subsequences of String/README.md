@@ -37,6 +37,80 @@ This code uses a recursive approach to generate all possible subsequences of the
 
 4. **Output**: Finally, it prints all the generated subsequences.
 
+## Pseudocode
+Here’s the pseudocode for generating all non-empty subsequences of a string, along with a detailed explanation to help beginners understand the process.
+
+```plaintext
+function generateSubsequences(input_str):
+    answer = empty list       // To store all subsequences
+    output = empty string      // To build the current subsequence
+    index = 0                 // Start at the first character
+
+    call solve(input_str, output, answer, index)
+
+    sort answer                // Sort the subsequences
+    print "Sub-Sequences of given String: "
+    for each subsequence in answer:
+        print subsequence
+
+function solve(input_str, output, answer, index):
+    if index >= length of input_str:
+        if output is not empty:
+            add output to answer
+        return
+
+    // Exclude the character at index
+    call solve(input_str, output, answer, index + 1)
+
+    // Include the character at index
+    character = input_str[index]
+    output = output + character  // Append the character to output
+    call solve(input_str, output, answer, index + 1)
+```
+
+### Explanation of Pseudocode
+
+1. **Function `generateSubsequences(input_str)`**:
+   - Initializes an empty list `answer` to store the resulting subsequences.
+   - Initializes an empty string `output` to build the current subsequence.
+   - Sets the `index` to `0`, indicating the start of the string.
+   - Calls the `solve` function to start the recursive process.
+   - Sorts the `answer` list to ensure a consistent order.
+   - Prints all the subsequences stored in `answer`.
+
+2. **Function `solve(input_str, output, answer, index)`**:
+   - Checks if the current `index` is greater than or equal to the length of `input_str`. If so, it means we've processed all characters.
+     - If `output` is not empty, adds it to `answer`.
+     - Returns to the previous call.
+   - **Exclusion Step**: Calls `solve` without including the character at the current `index`, effectively exploring the subsequences that do not contain that character.
+   - **Inclusion Step**: 
+     - Retrieves the character at the current `index`.
+     - Appends this character to `output`.
+     - Calls `solve` again, this time including the character, exploring subsequences that do include it.
+
+### Summary
+
+This pseudocode breaks down the recursive logic into clear steps:
+- The main function initializes the process.
+- The recursive function builds subsequences by exploring both possibilities: including and excluding each character.
+- The structure of the pseudocode allows beginners to grasp the recursive approach and understand how subsequences are generated systematically.
+
+### Example Walkthrough
+
+For the string "AB":
+1. Start with `index = 0` (character 'A'):
+   - Exclude 'A': call `solve` with `index = 1`.
+     - For `index = 1` (character 'B'):
+       - Exclude 'B': call `solve` with `index = 2` (add empty string to `answer`).
+       - Include 'B': output becomes "B", add to `answer`.
+   - Include 'A': output becomes "A", call `solve` with `index = 1`.
+     - Exclude 'B': add "A" to `answer`.
+     - Include 'B': output becomes "AB", add to `answer`.
+
+Final `answer` would contain: `["A", "B", "AB"]`.
+
+This systematic approach and the pseudocode should make it easier for beginners to follow along and understand how subsequences are generated.
+
 ## Problem Solution
 ```cpp
 #include <iostream>
