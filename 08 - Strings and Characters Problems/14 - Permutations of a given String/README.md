@@ -1,5 +1,5 @@
 
-<h1 align='center'>Permutations - Of - a - Given - String</h1>
+<h1 align='center'>Permutations - of a - Given - String</h1>
 
 ## Problem Statement
 
