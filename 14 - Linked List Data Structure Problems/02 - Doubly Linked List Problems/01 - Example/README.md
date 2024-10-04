@@ -1,7 +1,54 @@
 <h1 align='center'>Doubly - Linked - List - Example</h1>
 
-## Problem Statement
-This code defines a doubly linked list structure using a `Node` class and various functions for inserting and deleting nodes in the list. Let's break it down step by step with explanations for each function and provide examples for a better understanding.
+
+A **doubly linked list** is a type of linked list where each node contains three components:
+1. **Data**: The value stored in the node.
+2. **Next pointer**: A reference to the next node in the sequence.
+3. **Previous pointer**: A reference to the previous node in the sequence.
+
+This structure allows traversal of the list in both **forward** and **backward** directions, unlike a singly linked list where traversal is only possible in one direction.
+
+### Structure of a Doubly Linked List Node:
+Each node in a doubly linked list has:
+- A **data field** to store the value.
+- A **pointer to the next node** (`next`).
+- A **pointer to the previous node** (`prev`).
+
+### Example of a Doubly Linked List:
+
+Imagine a list with three nodes: `10`, `20`, and `30`. A doubly linked list would look like this:
+
+```
+NULL <- [10] <-> [20] <-> [30] -> NULL
+```
+
+- **Forward Traversal**: We can go from node `10` to `30`:
+  - Start at `10`, move to `20` via `next`, then to `30`.
+  
+- **Backward Traversal**: We can go from node `30` back to `10`:
+  - Start at `30`, move to `20` via `prev`, then to `10`.
+
+### Operations:
+1. **Insertion**: You can insert a new node between any two nodes, and both the `next` and `prev` pointers will be updated.
+   - Example: Inserting `25` between `20` and `30`:
+     ```
+     NULL <- [10] <-> [20] <-> [25] <-> [30] -> NULL
+     ```
+
+2. **Deletion**: When a node is deleted, both its previous and next pointers are adjusted to maintain the structure.
+   - Example: Deleting `20` from the list:
+     ```
+     NULL <- [10] <-> [30] -> NULL
+     ```
+
+### Advantages of a Doubly Linked List:
+- **Bidirectional traversal**: You can traverse the list in both directions, unlike a singly linked list.
+- **Efficient insertion and deletion**: Since each node has pointers to both the previous and next nodes, insertion and deletion operations are more flexible.
+
+### Disadvantages:
+- **Extra memory**: Each node requires extra memory to store the `prev` pointer.
+- **More complex operations**: In comparison to a singly linked list, operations require updating both `next` and `prev` pointers.
+
 
 ## Source Code 
 ```cpp
