@@ -1,5 +1,52 @@
 <h1 align='center'>Singly - Linked - List - Data Structure</h1>
 
+A **singly linked list** is a type of linked list where each node contains two components:
+1. **Data**: The value stored in the node.
+2. **Next pointer**: A reference to the next node in the sequence.
+
+Unlike a doubly linked list, a singly linked list only allows traversal in **one direction**—from the first node (called the **head**) to the last node.
+
+### Structure of a Singly Linked List Node:
+Each node in a singly linked list has:
+- A **data field** to store the value.
+- A **pointer to the next node** (`next`).
+
+### Example of a Singly Linked List:
+
+Imagine a list with three nodes: `10`, `20`, and `30`. A singly linked list would look like this:
+
+```
+[10] -> [20] -> [30] -> NULL
+```
+
+- **Forward Traversal**: You can only go from `10` to `30` by following the `next` pointers.
+  - Start at `10`, move to `20`, then to `30`.
+
+### Operations:
+1. **Insertion**: You can insert a new node at various positions (beginning, middle, or end) of the list.
+   - Example: Inserting `15` between `10` and `20`:
+     ```
+     [10] -> [15] -> [20] -> [30] -> NULL
+     ```
+
+2. **Deletion**: A node can be deleted from the list, and the `next` pointers are adjusted to maintain the structure.
+   - Example: Deleting `20` from the list:
+     ```
+     [10] -> [30] -> NULL
+     ```
+
+### Advantages of a Singly Linked List:
+- **Less memory usage**: Each node only needs a single `next` pointer, unlike doubly linked lists that need two.
+- **Simplicity**: Singly linked lists are simpler to implement and manage compared to doubly linked lists.
+
+### Disadvantages:
+- **Unidirectional traversal**: You can only traverse the list in one direction (from head to end). You cannot go backward.
+- **Inefficient search**: To find a specific element, you may need to traverse the entire list, as there is no direct access to elements in the middle.
+
+### Common Uses:
+- **Queue structures**: Where elements are processed in a first-in, first-out (FIFO) manner.
+- **Managing dynamic data**: When the size of the dataset changes frequently, singly linked lists provide flexibility in memory management.
+
 ## Problem Statement: Implementing a Singly Linked List
 
 You are tasked with implementing a **Singly Linked List** data structure. A singly linked list consists of nodes, where each node contains a value and a pointer to the next node in the list. Your implementation should support the following operations:
