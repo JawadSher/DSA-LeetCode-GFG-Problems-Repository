@@ -1,4 +1,4 @@
-<h1 align='center'></h1>
+<h1 align='center'>Remove - Duplicates - From the - Sorted - List</h1>
 
 ## Problem Statement
 
