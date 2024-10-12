@@ -32,29 +32,11 @@ The sum of `342 + 465 = 807`, which in reverse order is represented as [7 → 0 
 3. **Handle Different List Lengths and Carry:**  
    - The two linked lists may have different lengths, so we need to handle when one list is longer.
    - Also, if the sum of digits at any position exceeds 9, we carry over the `carry` (just like in manual addition).
-  
-4. **Reverse Thinking for Reverse Order:**  
-   Since the digits are stored in reverse order, we add them from left to right directly as they appear in the linked lists.
 
 ## Problem Solution
 ```cpp
 class Solution {
 private:
-    ListNode* reverse(ListNode* head){
-        ListNode* curr = head;
-        ListNode* prev = NULL;
-        ListNode* next = NULL;
-
-        while(curr != NULL){
-            next = curr -> next;
-            curr -> next = prev;
-            prev = curr;
-            curr = next;
-        } 
-
-        return prev;
-    }
-
     void insertAtTail(ListNode* &head, ListNode* &tail, int val){
         ListNode* temp = new ListNode(val);
         if(head == NULL){
@@ -130,40 +112,6 @@ class Solution {
 ```
 
 The `Solution` class contains methods to solve the problem.
-
----
-
-#### `reverse` Function
-
-```cpp
-private:
-    ListNode* reverse(ListNode* head){
-        ListNode* curr = head;
-        ListNode* prev = NULL;
-        ListNode* next = NULL;
-
-        while(curr != NULL){
-            next = curr -> next;
-            curr -> next = prev;
-            prev = curr;
-            curr = next;
-        } 
-
-        return prev;
-    }
-```
-
-The `reverse` function is designed to reverse a linked list. Though not used in the final solution, this helper function is often useful when dealing with linked list problems.
-
-**Explanation:**
-1. **curr = head**: Start from the head of the list.
-2. **prev = NULL**: Initially, there’s no previous node.
-3. **next = NULL**: This stores the next node temporarily during traversal.
-4. **while(curr != NULL)**: Loop through the list until we reach the end.
-    - Save the next node (`next = curr -> next`).
-    - Reverse the `next` pointer of the current node (`curr -> next = prev`).
-    - Move `prev` and `curr` forward.
-5. **return prev**: Return the new head of the reversed list (which was previously the last node).
 
 ---
 
@@ -260,11 +208,11 @@ The `addTwoNumbers` function is the main function that the user will call. It si
 
 **Example 1:**
 
-`l1` = [2 → 4 → 3] (represents 342),  
-`l2` = [5 → 6 → 4] (represents 465)
+`l1` = [2 → 4 → 3] (represents 244),  
+`l2` = [5 → 6 → 4] (represents 564)
 
 1. Add the digits in the first position: `2 + 5 = 7` → result so far: `[7]`.
 2. Add the digits in the second position: `4 + 6 = 10`, carry the `1` → result so far: `[7 → 0]`, carry = 1.
 3. Add the digits in the third position: `3 + 4 + 1(carry) = 8` → result so far: `[7 → 0 → 8]`.
 
-Final result: `[7 → 0 → 8]` (which represents 807).
+Final result: `[7 → 0 → 8]` (which represents 708).
