@@ -21,7 +21,85 @@ A **stack** is a linear data structure that follows the **LIFO** (Last In, First
 - Operations like **push**, **pop**, and **peek** are performed in constant time, i.e., O(1).
 - The main limitation of array-based stacks is the fixed size of the array, meaning once the stack is full, new elements cannot be pushed without resizing (which is not covered in basic array-based implementations).
 
-### Explanation of the Source Code
+## Source Code
+```cpp
+#include <iostream>
+using namespace std;
+
+class Stack{
+  // properties
+  public:
+    int *arr;
+    int top;
+    int size;
+
+  // methods
+  Stack(int size){
+    this -> size = size;
+    arr = new int[size];
+    top = -1;
+  }
+
+  void push(int element){
+    if(size - top > 1){
+      top++;
+      arr[top] = element;
+    }else{
+      cout << "Stack Overflow" << endl;
+    }
+  }
+  void pop(){
+    if(top >= 0){
+      top--;
+    }else{
+      cout << "Stack Underflow" << endl;
+    }
+  }
+  int peek(){
+    if(top >= 0){
+      return arr[top];
+    }else{
+      cout << "Stack is Empty" << endl;
+      return - 1;
+    }
+  }
+  bool isEmpty(){
+    if(top == -1){
+      return true;
+    }else{
+      return false;
+    }
+  }
+};
+
+int main() {
+  // create a Stack
+  Stack st(5);
+
+  // insert elements
+  st.push(10);
+  st.push(20);
+  st.push(30);
+
+  // Getting the Top element
+  cout <<"Top Element is : "<< st.peek() << endl;
+
+  // Remove the top Element;
+  st.pop();
+
+  // Getting the Top element
+  cout <<"After Pop - Top Element is : "<< st.peek() << endl;
+
+  // Is Stack empty or not
+  if(st.isEmpty()){
+    cout << "Stack is Empty" <<endl;
+  }else{
+    cout << "Stack is Not Empty" << endl;
+  }
+  return 0;
+}
+```
+## Explanation of the Source Code
 
 This C++ program implements a stack using a **class** and **dynamic memory allocation** (using pointers). Here's a step-by-step explanation of the code, along with the key operations, time complexity, and space complexity analysis.
 
