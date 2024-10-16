@@ -22,5 +22,3 @@ void SortedStack :: sort() {
     
     sortedInsertion(s, preserveNum);
 }
-
-Do the same thing for this source code.
