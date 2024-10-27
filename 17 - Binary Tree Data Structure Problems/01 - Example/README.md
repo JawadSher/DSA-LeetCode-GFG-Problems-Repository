@@ -176,7 +176,7 @@ void buildFromLevelOrder(Node* &root){
             q.push(temp->left);
         }
         
-        cout << "Enter right Node for : " << root -> data <<endl;
+        cout << "Enter right Node for : " << temp -> data <<endl;
         int rightData;
         cin>> rightData;
         
