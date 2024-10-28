@@ -7,7 +7,7 @@ class Solution{
         if(left == -1) return -1;
         
         int right = heights(root -> right);
-        if(left == -1) return -1;
+        if(right == -1) return -1;
         
         if(abs(left - right) > 1) return -1;
         
