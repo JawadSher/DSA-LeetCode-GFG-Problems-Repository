@@ -72,224 +72,205 @@ So the output will be:
    
 ## Problem Solution
 ```cpp
-#include <map>
-#include <vector>
-#include <queue>
-using namespace std;
-
-struct Node {
-    int data;
-    Node *left, *right;
-};
-
-class Solution {
-public:
-    void verticalOrder(Node* root) {
-        if (root == NULL) return;
-
-        // Map to store nodes in vertical order
-        map<int, vector<int>> verticalMap;
-
-        // Queue for BFS traversal with horizontal distance
-        queue<pair<Node*, int>> q;
-        q.push({root, 0}); // {node, horizontal distance}
-
-        while (!q.empty()) {
-            auto [node, hd] = q.front(); // Get the front element
+class Solution
+{
+    public:
+    //Function to find the vertical order traversal of Binary Tree.
+    vector<int> verticalOrder(Node *root)
+    {
+        map<int, map<int, vector<int> >> nodes;
+        queue<pair<Node*, pair<int, int> >> q;
+        
+        vector<int> ans;
+        if(root == NULL) return ans;
+        
+        q.push(make_pair(root, make_pair(0, 0)));
+        
+        while(!q.empty()){
+            pair<Node*, pair<int, int> > temp = q.front();
             q.pop();
-
-            // Store node data in the map according to horizontal distance
-            verticalMap[hd].push_back(node->data);
-
-            // Push left child with HD - 1
-            if (node->left) q.push({node->left, hd - 1});
-            // Push right child with HD + 1
-            if (node->right) q.push({node->right, hd + 1});
+            Node* frontNode = temp.first;
+            int hd = temp.second.first;
+            int lvl = temp.second.second;
+            
+            nodes[hd][lvl].push_back(frontNode -> data);
+            
+            if(frontNode -> left)
+                q.push(make_pair(frontNode -> left, make_pair(hd -1 , lvl + 1)));
+                
+            if(frontNode -> right)
+                q.push(make_pair(frontNode -> right, make_pair(hd + 1, lvl + 1)));
         }
-
-        // Output the vertical order
-        for (const auto& pair : verticalMap) {
-            for (int value : pair.second) {
-                cout << value << " ";
+        
+        for(auto i : nodes){
+            for(auto j : i.second){
+                for(auto k : j.second){
+                    ans.push_back(k);
+                }
             }
-            cout << endl; // Newline for different verticals
         }
+        
+        
+        return ans;
     }
 };
 ```
 
 ## Problem Solution Explanation
 
-1. **Include Libraries**
-   ```cpp
-   #include <map>
-   #include <vector>
-   #include <queue>
-   ```
-   - These lines include the necessary libraries:
-     - `<map>`: For using the map data structure to store vertical nodes.
-     - `<vector>`: For storing multiple values (nodes) corresponding to each vertical.
-     - `<queue>`: For implementing the BFS (Breadth-First Search) traversal.
+Let's break down the provided source code for the vertical order traversal of a binary tree. This code uses a combination of a queue for level-order traversal and a nested map to store node values by their horizontal and vertical distances.
 
-2. **Node Structure Definition**
+1. **Class Definition**
    ```cpp
-   struct Node {
-       int data;
-       Node *left, *right;
-   };
-   ```
-   - This defines a `Node` structure to represent a binary tree node:
-     - `data`: An integer storing the value of the node.
-     - `left`: A pointer to the left child node.
-     - `right`: A pointer to the right child node.
-
-3. **Class Definition**
-   ```cpp
-   class Solution {
+   class Solution
+   {
    public:
    ```
-   - Defines the `Solution` class, which contains methods to solve the problem. The `public` access specifier indicates that the members of this class can be accessed from outside the class.
+   - Defines the `Solution` class, which will contain the method for vertical order traversal.
 
-4. **Vertical Order Method Declaration**
+2. **Vertical Order Method Declaration**
    ```cpp
-   void verticalOrder(Node* root) {
+   vector<int> verticalOrder(Node *root)
+   {
    ```
-   - Declares the `verticalOrder` method that takes a pointer to the root of the binary tree as an argument.
+   - Declares the `verticalOrder` method, which takes a pointer to the root of the binary tree as its argument and returns a vector of integers.
 
-5. **Check for Empty Tree**
+3. **Nested Map Initialization**
    ```cpp
-   if (root == NULL) return;
+   map<int, map<int, vector<int> >> nodes;
    ```
-   - This line checks if the root node is `NULL`. If it is, the function immediately returns, as there are no nodes to process.
+   - Initializes a nested map called `nodes`:
+     - The outer map's key (`int`) represents the horizontal distance from the root.
+     - The inner map's key (`int`) represents the level of the node, with the value being a vector of integers (the node data at that horizontal distance and level).
 
-6. **Map Initialization**
+4. **Queue Initialization for BFS**
    ```cpp
-   map<int, vector<int>> verticalMap;
+   queue<pair<Node*, pair<int, int> >> q;
    ```
-   - Initializes a map called `verticalMap` where:
-     - The key is an integer (the horizontal distance from the root).
-     - The value is a vector of integers (the node values at that horizontal distance).
-
-7. **Queue Initialization for BFS**
-   ```cpp
-   queue<pair<Node*, int>> q;
-   q.push({root, 0}); // {node, horizontal distance}
-   ```
-   - Declares a queue named `q` to facilitate level-order traversal. Each element in the queue is a pair consisting of:
+   - Declares a queue `q` to perform level-order traversal, where each element is a pair consisting of:
      - A pointer to the node (`Node*`).
-     - An integer representing the horizontal distance (HD) of that node.
-   - Pushes the root node into the queue with an HD of `0`.
+     - A pair of integers representing the horizontal distance and the level of the node.
 
-8. **BFS Loop**
+5. **Output Vector Initialization**
    ```cpp
-   while (!q.empty()) {
+   vector<int> ans;
+   if(root == NULL) return ans;
+   ```
+   - Initializes a vector `ans` to store the final vertical order traversal result.
+   - Checks if the root is `NULL`, returning an empty vector if it is, as there are no nodes to process.
+
+6. **Push Root into Queue**
+   ```cpp
+   q.push(make_pair(root, make_pair(0, 0)));
+   ```
+   - Pushes the root node into the queue with a horizontal distance (`hd`) of `0` and level (`lvl`) of `0`.
+
+7. **BFS Loop**
+   ```cpp
+   while(!q.empty()){
    ```
    - Starts a loop that continues as long as the queue is not empty, indicating there are still nodes to process.
 
-9. **Extract Node and HD**
+8. **Extract Node, HD, and Level**
    ```cpp
-   auto [node, hd] = q.front(); // Get the front element
+   pair<Node*, pair<int, int> > temp = q.front();
    q.pop();
+   Node* frontNode = temp.first;
+   int hd = temp.second.first;
+   int lvl = temp.second.second;
    ```
-   - Uses structured bindings (C++17 feature) to unpack the front element of the queue into `node` and `hd`.
-   - `q.front()` retrieves the element at the front of the queue without removing it.
-   - `q.pop()` removes the front element from the queue after retrieving it.
+   - Retrieves the front element of the queue and unpacks it into `temp`, which contains:
+     - `frontNode`: The current node being processed.
+     - `hd`: The horizontal distance of `frontNode`.
+     - `lvl`: The level of `frontNode`.
+   - Calls `q.pop()` to remove the processed node from the queue.
 
-10. **Store Node Data in Map**
+9. **Store Node Data in Map**
+   ```cpp
+   nodes[hd][lvl].push_back(frontNode -> data);
+   ```
+   - Stores the current node's data in the nested map `nodes` based on its horizontal distance (`hd`) and level (`lvl`).
+
+10. **Push Left Child into Queue**
     ```cpp
-    verticalMap[hd].push_back(node->data);
+    if(frontNode -> left)
+        q.push(make_pair(frontNode -> left, make_pair(hd -1 , lvl + 1)));
     ```
-    - This line adds the current node's data to the vector in `verticalMap` that corresponds to its horizontal distance (`hd`).
+    - If the current node has a left child, it is pushed into the queue with:
+      - Horizontal distance (`hd - 1`) because the left child is one unit to the left.
+      - Level (`lvl + 1`) because it is one level deeper.
 
-11. **Push Left Child into Queue**
+11. **Push Right Child into Queue**
     ```cpp
-    if (node->left) q.push({node->left, hd - 1});
+    if(frontNode -> right)
+        q.push(make_pair(frontNode -> right, make_pair(hd + 1, lvl + 1)));
     ```
-    - If the current node has a left child, it is pushed into the queue with an HD of `hd - 1` (since left children are one unit closer to the left).
+    - If the current node has a right child, it is pushed into the queue with:
+      - Horizontal distance (`hd + 1`) because the right child is one unit to the right.
+      - Level (`lvl + 1`) because it is one level deeper.
 
-12. **Push Right Child into Queue**
+12. **Output the Vertical Order**
     ```cpp
-    if (node->right) q.push({node->right, hd + 1});
-    ```
-    - If the current node has a right child, it is pushed into the queue with an HD of `hd + 1` (since right children are one unit closer to the right).
-
-13. **Output Vertical Order**
-    ```cpp
-    for (const auto& pair : verticalMap) {
-    ```
-    - This loop iterates through each key-value pair in the `verticalMap`.
-
-14. **Print Node Values for Each Vertical**
-    ```cpp
-    for (int value : pair.second) {
-        cout << value << " ";
+    for(auto i : nodes){
+        for(auto j : i.second){
+            for(auto k : j.second){
+                ans.push_back(k);
+            }
+        }
     }
-    cout << endl; // Newline for different verticals
     ```
-    - The inner loop iterates through the vector of node values (`pair.second`) corresponding to each HD and prints each value followed by a space.
-    - After printing all values for a vertical line, it outputs a newline for better readability.
+    - This nested loop iterates through the `nodes` map:
+      - The outer loop iterates through each horizontal distance (`i`).
+      - The middle loop iterates through each level at that horizontal distance (`j`).
+      - The inner loop iterates through each node value at that level and pushes it into the `ans` vector.
+    - This effectively constructs the vertical order of the binary tree.
 
+13. **Return the Result**
+    ```cpp
+    return ans;
+    }
+   };
+   ```
+   - Finally, returns the `ans` vector containing the vertical order traversal of the binary tree.
 
-## Step 4: Output Examples with Explanation
+```
+### Example
 
-### Example 1
-Given the tree:
+Given the following binary tree:
+
 ```
         1
        / \
       2   3
      / \   \
     4   5   6
-       /
-      7
 ```
 
-**Output**:
-```
-4
-2
-1 5 7
-3
-6
-```
+The vertical order traversal would be: `4 2 1 5 3 6`. 
 
-### Explanation
-- The first vertical (HD -2) contains node `4`.
-- The second vertical (HD -1) contains node `2`.
-- The third vertical (HD 0) contains nodes `1`, `5`, and `7` printed together.
-- The fourth vertical (HD 1) contains node `3`.
-- The fifth vertical (HD 2) contains node `6`.
+1. **Horizontal distances:**
+   - `2` has HD `-1`, `1` has HD `0`, `3` has HD `1`.
+   - `4` has HD `-2`, `5` has HD `0`, `6` has HD `1`.
 
-### Example 2
-For a single node tree:
-```
-        1
-```
-
-**Output**:
-```
-1
-```
-
-### Explanation
-- The tree consists only of the root node, which is also the only node at HD `0`.
-
-## Step 5: Time and Space Complexity
+2. **Levels:**
+   - The levels of nodes are considered while traversing to maintain the order when nodes have the same HD.
 
 ### Time Complexity
-- The algorithm performs a level-order traversal (BFS) of the binary tree:
-  - Each node is visited once.
-  - Therefore, the time complexity is **O(n)**, where `n` is the number of nodes in the tree.
+
+- **BFS Traversal:** Each node is processed once, leading to a time complexity of **O(N)**, where **N** is the number of nodes in the tree.
+
+- **Map Operations:** The operations on the map also take **O(N)** time in the worst case for insertion and retrieval.
+
+Overall, the time complexity is **O(N)**.
 
 ### Space Complexity
-- The space complexity is determined by:
-  - The queue used for BFS: In the worst case (a balanced tree), it can hold up to `O(w)` nodes, where `w` is the maximum width of the tree.
-  - The map that stores vertical values: In the worst case, it can also hold `O(n)` nodes if every node is in a different vertical.
 
-Thus, the space complexity is **O(n)** in the worst case due to storing nodes in the map.
+- **Queue Space:** The queue can hold at most **O(N)** nodes in the worst case (e.g., a completely unbalanced tree).
 
-### Summary
-- **Time Complexity**: **O(n)**
-- **Space Complexity**: **O(n)**
+- **Map Space:** The map stores each node, leading to an additional **O(N)** space.
 
-This thorough explanation covers the vertical tree traversal problem from understanding the problem statement to implementation and analysis of the code. If you have any questions or need further clarification, feel free to ask!
+Overall, the space complexity is **O(N)** due to the space needed for the queue and the nested map.
+
+### Conclusion
+
+The code effectively utilizes a queue for level-order traversal and a nested map to organize nodes by their vertical order, considering both horizontal distance and level to provide a well-structured output. If you have further questions or need clarifications, feel free to ask!
