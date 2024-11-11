@@ -2,6 +2,57 @@
 
 In C++, the Standard Template Library (STL) provides an efficient way to implement heaps (priority queues) using the `priority_queue` container. This makes it easy to create both max-heaps and min-heaps without having to implement the heap operations manually. Let’s go over the code you provided and explain each part, as well as the specifics of using STL for heaps.
 
+## Priority Queue
+A priority queue is a specialized data structure that operates similarly to a regular queue but with an added feature: each element has a "priority" associated with it. In a priority queue, elements are removed based on priority rather than their order of insertion.
+
+### Key Characteristics of a Priority Queue:
+1. **Priority-Based Access**: The element with the highest priority is always at the front of the queue and will be the next to be removed, regardless of when it was added.
+2. **Dynamic Reordering**: When elements are added, the priority queue automatically rearranges to keep the highest priority element at the front.
+3. **Different Types of Heaps**: The two most common types of priority queues are:
+   - **Max-Heap**: The element with the highest priority (maximum value) is at the front.
+   - **Min-Heap**: The element with the lowest priority (minimum value) is at the front.
+
+### How a Priority Queue Works:
+Priority queues are often implemented using a data structure called a **heap** (specifically, a binary heap), as it provides efficient access to the maximum or minimum element and allows for efficient insertions and deletions. 
+
+### Priority Queue Operations and Their Complexity:
+1. **Insertion (`push`)**: Adding a new element to the queue. In a binary heap, this operation has a time complexity of \(O(\log n)\) because it might require "heapifying" the structure to maintain the priority order.
+   
+2. **Accessing the Top Element (`top`)**: Accessing the highest (or lowest) priority element. In a priority queue, this is the element at the root of the heap, and this operation has a time complexity of \(O(1)\) since the root is always directly accessible.
+   
+3. **Removing the Top Element (`pop`)**: Removing the highest (or lowest) priority element. In a binary heap, this operation has a time complexity of \(O(\log n)\) because after removing the root, the structure must be adjusted to restore the heap property.
+
+4. **Checking if Empty (`empty`)**: Checking whether the queue contains any elements, with a time complexity of \(O(1)\).
+
+5. **Getting Size (`size`)**: Retrieving the number of elements in the queue, also with a time complexity of \(O(1)\).
+
+### Example of Priority Queue Operations:
+Let’s illustrate priority queue operations using a max-heap and min-heap:
+
+1. **Max-Heap Priority Queue**
+   - Suppose you add elements `[4, 2, 5, 3]` to a max-heap.
+   - After each insertion, the priority queue will ensure the element with the largest value is at the root.
+   - Accessing the top element (`top`) will return `5`, the maximum value.
+   - Removing the top element (`pop`) will remove `5`, and `4` will then become the top element.
+
+2. **Min-Heap Priority Queue**
+   - In a min-heap priority queue, the smallest element has the highest priority.
+   - With elements `[4, 2, 5, 3]`, the heap will reorder itself to place `2` (the smallest) at the top.
+   - Accessing the top element will return `2`.
+   - Removing the top element will then return the next smallest element (`3`).
+
+### Use Cases of Priority Queues:
+1. **Scheduling Systems**: Task scheduling in operating systems uses priority queues to decide which task to run next based on priority.
+2. **Dijkstra's Algorithm**: Used in finding the shortest path in graph algorithms, where nodes with the smallest tentative distance are processed first.
+3. **Event Simulation**: Events in simulations are scheduled based on time or priority.
+4. **Data Processing**: Situations where items with higher priority need to be processed first, such as in message or packet processing.
+
+### Priority Queue in C++ STL:
+In C++, priority queues are implemented using the `priority_queue` container from the Standard Template Library (STL), which provides a convenient way to work with both max-heaps and min-heaps.
+
+- **Max-Heap**: `priority_queue<int> max_pq;` (by default, the highest number has the highest priority).
+- **Min-Heap**: `priority_queue<int, vector<int>, greater<int>> min_pq;` (using `greater<int>` to give the lowest number the highest priority).
+
 ## Source code
 ```cpp
 #include <iostream>
