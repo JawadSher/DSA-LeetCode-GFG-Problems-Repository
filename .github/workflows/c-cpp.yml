@@ -1,23 +1,22 @@
-name: C/C++ CI
+name: C++ Build
 
-on:
-  push:
-    branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
+on: [push, pull_request]
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v4
+      - name: Check out repository
+        uses: actions/checkout@v4
 
-    - name: Install dependencies
-      run: sudo apt-get install -y g++
+      - name: Set up C++ environment
+        run: sudo apt-get install g++
 
-    - name: Compile
-      run: g++ -o output_file main.cpp
-
-    - name: Run Program (Optional)
-      run: ./output_file
+      - name: Find and compile all C++ files
+        run: |
+          find problems -name "main.cpp" | while read file; do
+            # Compile each main.cpp to an executable with a unique name
+            dir=$(dirname "$file")
+            g++ "$file" -o "${dir}/output"
+          done
