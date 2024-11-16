@@ -13,11 +13,15 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      # Ensure configure is executable and then run it
-      - name: Ensure configure is executable
+      # Check if configure script is present
+      - name: List files
+        run: ls -la
+
+      # Ensure the configure script is executable and run it
+      - name: Make configure executable
         run: chmod +x ./configure
 
-      - name: configure
+      - name: Run configure
         run: ./configure
 
       - name: make
