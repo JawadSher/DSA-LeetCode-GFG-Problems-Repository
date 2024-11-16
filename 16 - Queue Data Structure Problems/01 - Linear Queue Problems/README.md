@@ -1,4 +1,4 @@
-<h1 align='center'>LINEAR - QUEUE - PROBLEMS</h1>
+<h1 align='center'>LINEAR - QUEUE - DATA STRUCTURE - PROBLEMS</h1>
 
 <p align='center'>A <b>Linear Queue</b> is a fundamental data structure in computer science used to store and manage a collection of elements in a specific order. It operates on a **First In, First Out (FIFO)** principle, meaning the first element added to the queue is the first one to be removed. 
 </p>
