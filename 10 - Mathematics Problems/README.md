@@ -13,7 +13,7 @@
 
 | No  | Problem Name                      | Description                               | Leetcode | GFG |
 |-----|------------------------------------|-------------------------------------------|----------|-----|
-| 01  | [Modular Exponentiation for Numbers](https://github.com/JawadSher/DSA-LeetCode-GFG-Problems-Repository/tree/main/10%20-%20Mathematics%20Problems/01%20-%20Modular%20Exponentitation%20for%20Numbers) | Calculate \(a^b \mod m\) efficiently. This problem focuses on finding the result of a large exponentiation modulo some number. | [Link](https://leetcode.com/problems/powx-n/) | [Link](https://www.geeksforgeeks.org/modular-exponentiation/) |
+| 01  | [Modular Exponentiation for Numbers](https://github.com/JawadSher/DSA-LeetCode-GFG-Problems-Repository/tree/main/10%20-%20Mathematics%20Problems/01%20-%20Modular%20Exponentitation%20for%20Numbers) | Calculate \(a^b \mod m\) efficiently. This problem focuses on finding the result of a large exponentiation modulo some number. | [Link](https://leetcode.com/problems/powx-n/) | Non |
 
 This table summarizes the problem, provides a link to its LeetCode and GFG pages, and includes a brief description of the problem.
 
