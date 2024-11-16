@@ -1,4 +1,4 @@
-<h1 align='center'>CIRCULAR - DEQUE - DATA STRUCTURE - PROBLEMS</h1>
+<h1 align='center'>DEQUE - DATA STRUCTURE - PROBLEMS</h1>
 
 <p align='center'>A <b>Circular Deque</b> is an advanced version of the double-ended queue (Deque) that behaves like a circular buffer. Unlike a linear deque, which allows insertion and deletion of elements from both ends (front and rear), the circular deque links the last position to the first position, creating a loop. This allows for more efficient use of space and ensures that the queue can be used in continuous cycles without the risk of unused memory.</p>
 
