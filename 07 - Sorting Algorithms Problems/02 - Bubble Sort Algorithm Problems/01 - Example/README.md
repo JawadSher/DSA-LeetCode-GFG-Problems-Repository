@@ -1,8 +1,72 @@
-<h1 align='center'>Example</h1>
+<h1 align='center'>Bubble - Sort - Algorithm - Example</h1>
 
 ## Problem Statement
 
 Write a function that sorts an array of integers in ascending order using the Bubble Sort algorithm. Implement the algorithm in C++ and ensure that the function stops early if the array becomes sorted before all passes are complete.
+
+## Problem Explanation
+The **Bubble Sort** algorithm is a simple comparison-based sorting algorithm that repeatedly steps through the list, compares adjacent elements, and swaps them if they are in the wrong order. The algorithm gets its name because smaller elements "bubble" to the top (beginning) of the list while larger elements "sink" to the bottom (end).
+
+### Steps of the Bubble Sort Algorithm:
+
+1. **Start from the beginning** of the list.
+2. **Compare adjacent elements**:
+   - If the current element is greater than the next one, **swap** them.
+   - If the current element is not greater than the next one, move to the next pair.
+3. **Repeat the process** for each pair of adjacent elements in the list.
+4. **Pass through the entire list**. After the first pass, the largest element is guaranteed to have "bubbled" to the last position.
+5. **Repeat** the process for the remaining unsorted part of the list (ignoring the last sorted element).
+6. **Stop when no more swaps are needed**, meaning the list is sorted.
+
+### Example:
+
+Let’s sort the list `[5, 3, 8, 4, 2]` using Bubble Sort:
+
+**Pass 1:**
+- Compare `5` and `3`: Swap → `[3, 5, 8, 4, 2]`
+- Compare `5` and `8`: No swap → `[3, 5, 8, 4, 2]`
+- Compare `8` and `4`: Swap → `[3, 5, 4, 8, 2]`
+- Compare `8` and `2`: Swap → `[3, 5, 4, 2, 8]`
+
+At the end of the first pass, `8` is at its correct position.
+
+**Pass 2:**
+- Compare `3` and `5`: No swap → `[3, 5, 4, 2, 8]`
+- Compare `5` and `4`: Swap → `[3, 4, 5, 2, 8]`
+- Compare `5` and `2`: Swap → `[3, 4, 2, 5, 8]`
+
+At the end of the second pass, `5` is in its correct position.
+
+**Pass 3:**
+- Compare `3` and `4`: No swap → `[3, 4, 2, 5, 8]`
+- Compare `4` and `2`: Swap → `[3, 2, 4, 5, 8]`
+
+At the end of the third pass, `4` is in its correct position.
+
+**Pass 4:**
+- Compare `3` and `2`: Swap → `[2, 3, 4, 5, 8]`
+
+At the end of the fourth pass, the list is sorted: `[2, 3, 4, 5, 8]`.
+
+### Characteristics of Bubble Sort:
+
+- **Time Complexity**:
+  - Worst-case: **O(n²)** (when the array is sorted in reverse order)
+  - Best-case: **O(n)** (when the array is already sorted)
+  - Average-case: **O(n²)**
+  
+- **Space Complexity**: **O(1)** (since it's an in-place sorting algorithm)
+
+- **Stable Sorting**: Yes, Bubble Sort is a stable sorting algorithm, meaning that equal elements retain their relative order.
+
+- **Adaptive**: In the best case (already sorted list), Bubble Sort can run in linear time **O(n)** if you add an optimization to detect if a pass doesn't require any swaps.
+
+### Advantages:
+- Simple to understand and implement.
+- Works well on small datasets or nearly sorted data.
+
+### Disadvantages:
+- Inefficient for large datasets (due to its O(n²) time complexity).
 
 ## Problem Solution
 ```cpp
