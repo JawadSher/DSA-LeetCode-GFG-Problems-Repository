@@ -1,6 +1,7 @@
 <h1 align='center'>MATHEMATICS - PROBLEMS</h1>
 
-This repository contains a collection of mathematical problems from both **LeetCode** and **GeeksforGeeks (GFG)**, focusing on key concepts and algorithms used in mathematics. The problems are carefully categorized based on their difficulty and concept, providing a solid foundation for those looking to improve their problem-solving skills in areas like number theory, arithmetic operations, prime number algorithms, and other fundamental mathematical concepts.
+<p align='center'>This repository contains a collection of mathematical problems from both **LeetCode** and **GeeksforGeeks (GFG)**, focusing on key concepts and algorithms used in mathematics. The problems are carefully categorized based on their difficulty and concept, providing a solid foundation for those looking to improve their problem-solving skills in areas like number theory, arithmetic operations, prime number algorithms, and other fundamental mathematical concepts.
+</p>
 
 ### Repository Content
 
