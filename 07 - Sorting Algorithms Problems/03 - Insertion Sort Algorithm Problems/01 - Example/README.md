@@ -1,19 +1,78 @@
-<h1 align='center'>Example</h1>
+<h1 align='center'>Insertion - Sort - Algorithm - Example</h1>
 
 ## Problem Statement
 The goal is to sort an array of integers in non-decreasing order using the **Insertion Sort** algorithm. This sorting algorithm is straightforward, works similarly to the way you might sort playing cards, and is particularly effective for small datasets or nearly sorted data.
 
-### Insertion Sort Algorithm: Detailed Explanation
+### Insertion Sort Algorithm
 
-**Insertion Sort** builds the sorted array (or list) one item at a time. It takes each element from the input array and inserts it into its correct position in the already sorted portion of the array.
+**Insertion Sort** is a simple and efficient comparison-based sorting algorithm. It works similarly to how you might sort playing cards in your hands: you start with one card and insert each new card into its correct position in the already sorted portion of the hand.
 
-Here's how the insertion sort algorithm works step by step:
+The key idea behind **insertion sort** is to maintain a "sorted" portion of the list while inserting new elements one by one into the correct position within that sorted portion.
 
-1. **Start** with the second element in the array (index 1), considering the first element (index 0) as a sorted sub-array.
-2. **Compare** the current element (often called `key`) with the elements in the sorted portion of the array (those to the left of it).
-3. **Shift** all the elements in the sorted portion that are greater than the `key` one position to the right. This creates space for the `key` to be inserted.
-4. **Insert** the `key` into its correct position in the sorted portion.
-5. **Repeat** this process for each element in the array until the entire array is sorted.
+### Steps of the Insertion Sort Algorithm:
+
+1. **Start with the second element** (index 1) of the list, considering the first element as a sorted portion.
+2. **Compare the current element** (key) with the elements in the sorted portion (on its left).
+3. **Shift all larger elements** of the sorted portion one position to the right to make room for the key element.
+4. **Insert the key element** into its correct position in the sorted portion.
+5. **Move to the next element** and repeat the process until the entire list is sorted.
+
+### Example:
+
+Let’s sort the list `[5, 3, 8, 4, 2]` using Insertion Sort:
+
+**Initial list**: `[5, 3, 8, 4, 2]`
+
+- **Step 1**: Start with the second element, `3`.
+  - Compare `3` with `5`. Since `3` is smaller than `5`, **shift `5` to the right** and insert `3` in the first position.
+  - Updated list: `[3, 5, 8, 4, 2]`
+
+- **Step 2**: Move to the next element, `8`.
+  - Compare `8` with `5`. Since `8` is greater than `5`, no shifting is needed, and `8` remains in place.
+  - Updated list: `[3, 5, 8, 4, 2]`
+
+- **Step 3**: Move to the next element, `4`.
+  - Compare `4` with `8`. Since `4` is smaller, **shift `8` to the right**.
+  - Compare `4` with `5`. Since `4` is smaller, **shift `5` to the right**.
+  - Insert `4` at the position of `5`.
+  - Updated list: `[3, 4, 5, 8, 2]`
+
+- **Step 4**: Move to the next element, `2`.
+  - Compare `2` with `8`. Since `2` is smaller, **shift `8` to the right**.
+  - Compare `2` with `5`. Since `2` is smaller, **shift `5` to the right**.
+  - Compare `2` with `4`. Since `2` is smaller, **shift `4` to the right**.
+  - Compare `2` with `3`. Since `2` is smaller, **shift `3` to the right**.
+  - Insert `2` at the first position.
+  - Updated list: `[2, 3, 4, 5, 8]`
+
+Now the list is sorted: `[2, 3, 4, 5, 8]`.
+
+### Characteristics of Insertion Sort:
+
+- **Time Complexity**:
+  - Worst-case: **O(n²)** (when the list is sorted in reverse order).
+  - Best-case: **O(n)** (when the list is already sorted).
+  - Average-case: **O(n²)**.
+
+- **Space Complexity**: **O(1)** (in-place sorting, so no extra space is required).
+
+- **Stable Sorting**: Yes, Insertion Sort is a stable sorting algorithm, meaning that equal elements retain their relative order.
+
+- **Adaptive**: Insertion Sort is adaptive, meaning it performs well when the input is already partially sorted.
+
+### Advantages:
+- **Efficient for small datasets**: Insertion Sort is very efficient for small or nearly sorted datasets, where its time complexity is closer to **O(n)**.
+- **Simple to implement**: The algorithm is easy to understand and implement.
+- **Adaptive**: Performs well when the list is already partially sorted.
+- **Stable**: Maintains the relative order of equal elements.
+
+### Disadvantages:
+- **Inefficient for large datasets**: Due to its **O(n²)** time complexity, it is inefficient on large datasets compared to other algorithms like Merge Sort or Quick Sort.
+- **Slow for large unsorted data**: The algorithm requires a lot of shifts when the data is completely unsorted.
+
+### Visualization:
+
+For better understanding, you can visualize Insertion Sort as inserting a card from an unsorted deck into a hand that is already sorted, gradually growing the sorted portion from left to right.
 
 
 ## Problem Solution
