@@ -23,21 +23,35 @@ Welcome to the Data Structures & Algorithms repository! This repository is dedic
 The repository includes a range of problems, many of which are inspired by LeetCode challenges. I am committed to updating this repository daily with new problems and solutions to keep it current and relevant. The goal is to solve LeetCode problems, document the solutions, and continuously improve the content available here.
 
 ## Problem Set Overview
-<p><img src="https://img.shields.io/badge/leetcode%20problems%20count-92-blue?style=flat&labelColor=gray&color=blue&logo=LeetCode&logoColor=white">
-<img src="https://img.shields.io/badge/geekforgeeks%20problems%20count-92-blue?style=flat&labelColor=gray&color=blue&logo=GeeksforGeeks&logoColor=white">
-<img src="https://img.shields.io/badge/self%20made%20problems%20count-92-blue?style=flat&labelColor=gray&color=blue&logo=code&logoColor=white">
-<img src='https://img.shields.io/badge/total%20problems%20count-92-blue?style=flat&labelColor=gray&color=blue'></p>
+<p>
+<img src="https://img.shields.io/badge/solved%20problems%20count-01-orange?logo=leetcode" alt="LeetCode">
+<img src="https://img.shields.io/badge/solved%20problems%20count-01-darkgreen?logo=geeksforGeeks" alt="GeeksforGeeks">
+<img src="https://img.shields.io/badge/total%20general%20problems%20count-03-blue" alt="Problem Count">
+<img src="https://img.shields.io/badge/total%20problems%20count-03-blue" alt="Problem Count">
+</p>
 
-| No | Problem Category | Description |
-|---|---|---|
-|01|[Grid-Matrix Patterns no-leetcode ](https://github.com/JawadSher/Data-Structures-Algorithms-Based-Problems/tree/main/01%20-%20Grid-Matrix%20Patterns%20no-leetcode) | Contains problems related to creating and manipulating grid-matrix patterns using loops just for beginners. |
-|02|[Grid-Matrix Based Problems Set](https://github.com/JawadSher/Data-Structures-Algorithms-Based-Problems/tree/main/02%20-%20Grid-Matrix%20Based%20Problems%20Set)|Collection of grid and matrix problems for algorithmic analysis and practice.|
-|03|[Bitwise Operators Based Problems](https://github.com/JawadSher/Data-Structures-Algorithms-Based-Problems/tree/main/03%20-%20Bitwise%20Operators%20Based%20Problems) | Focuses on problems that require the use of bitwise operators to solve. |
-|04|[Binary and Decimal Number System Based Problems](https://github.com/JawadSher/Data-Structures-Algorithms-Based-Problems/tree/main/04%20-%20Binary%20and%20Decimal%20Number%20System%20Based%20Problems) | Includes problems related to binary and decimal number systems, conversions, and arithmetic operations. |
-|05|[Arrays Based Problems](https://github.com/JawadSher/Data-Structures-Algorithms-Based-Problems/tree/main/05%20-%20Arrays%20Based%20Problems) | Explore fundamental array-based problems emphasizing linear search techniques and basic array operations for DSA students. |
-|06|[Binary Search Algorithms Problems](https://github.com/JawadSher/Data-Structures-Algorithms-Based-Problems/tree/main/06%20-%20Binary%20Search%20Algorithm%20Based%20Problems) | Includes all Binary Search Algorithms based problems solutions and explained in detail.|
-| 07 | [Sorting Algorithms Problems](https://github.com/JawadSher/DSA-LeetCode-Problems-Repository/tree/main/07%20-%20Sorting%20Algorithms%20Problems) | Includes a collection of problems covering different sorting algorithms from GFG and LeetCode.|
-| 08 | [Strings and Characters Problems](https://github.com/JawadSher/DSA-LeetCode-GFG-Problems-Repository/tree/main/08%20-%20Strings%20and%20Characters%20Problems) | Collection of string manipulation problems from LeetCode and GFG with optimized solutions. |
+| No  | Problem Category                                                                                       | Description                                                                                         |
+|-----|--------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------|
+| 00  | [Ultimate DSA Problems Collection](https://github.com/JawadSher/DSA-LeetCode-GFG-Problems-Repository/tree/main/00%20-%20Ultimate%20DSA%20Problems%20Collection) | A comprehensive collection of DSA problems to prepare for competitive programming and coding interviews. |
+| 01  | [Grid-Matrix Patterns no-leetcode](https://github.com/JawadSher/DSA-LeetCode-GFG-Problems-Repository/tree/main/01%20-%20Grid-Matrix%20Patterns%20no-leetcode) | Contains problems related to creating and manipulating grid-matrix patterns using loops just for beginners. |
+| 02  | [Grid-Matrix Based Problems Set](https://github.com/JawadSher/DSA-LeetCode-GFG-Problems-Repository/tree/main/02%20-%20Grid-Matrix%20Based%20Problems%20Set) | Collection of grid and matrix problems for algorithmic analysis and practice.                       |
+| 03  | [Bitwise Operators Based Problems](https://github.com/JawadSher/DSA-LeetCode-GFG-Problems-Repository/tree/main/03%20-%20Bitwise%20Operators%20Based%20Problems) | Focuses on problems that require the use of bitwise operators to solve.                             |
+| 04  | [Binary and Decimal Number System Based Problems](https://github.com/JawadSher/DSA-LeetCode-GFG-Problems-Repository/tree/main/04%20-%20Binary%20and%20Decimal%20Number%20System%20Based%20Problems) | Includes problems related to binary and decimal number systems, conversions, and arithmetic operations. |
+| 05  | [Arrays Based Problems](https://github.com/JawadSher/DSA-LeetCode-GFG-Problems-Repository/tree/main/05%20-%20Arrays%20Based%20Problems) | Explore fundamental array-based problems emphasizing linear search techniques and basic array operations for DSA students. |
+| 06  | [Binary Search Algorithm Based Problems](https://github.com/JawadSher/DSA-LeetCode-GFG-Problems-Repository/tree/main/06%20-%20Binary%20Search%20Algorithm%20Based%20Problems) | Includes all Binary Search Algorithms-based problem solutions explained in detail.                  |
+| 07  | [Sorting Algorithms Problems](https://github.com/JawadSher/DSA-LeetCode-GFG-Problems-Repository/tree/main/07%20-%20Sorting%20Algorithms%20Problems) | Includes a collection of problems covering different sorting algorithms from GFG and LeetCode.      |
+| 08  | [Strings and Characters Problems](https://github.com/JawadSher/DSA-LeetCode-GFG-Problems-Repository/tree/main/08%20-%20Strings%20and%20Characters%20Problems) | Collection of string manipulation problems from LeetCode and GFG with optimized solutions.          |
+| 09  | [Sieve of Eratosthenes & Segmented Sieve Problems](https://github.com/JawadSher/DSA-LeetCode-GFG-Problems-Repository/tree/main/09%20-%20Sieve%20of%20Eratosthenes%20&%20Segmented%20Sieve%20Problems) | Focuses on the sieve of Eratosthenes algorithm and its variations for solving prime number-related problems. |
+| 10  | [Mathematics Problems](https://github.com/JawadSher/DSA-LeetCode-GFG-Problems-Repository/tree/main/10%20-%20Mathematics%20Problems) | Includes math-related problems, including modular arithmetic, GCD, LCM, and combinatorics.           |
+| 11  | [Recursion Problems](https://github.com/JawadSher/DSA-LeetCode-GFG-Problems-Repository/tree/main/11%20-%20Recursion%20Problems) | Problems designed to understand and implement recursive solutions effectively.                      |
+| 12  | [Merge Sort Algorithm Problems](https://github.com/JawadSher/DSA-LeetCode-GFG-Problems-Repository/tree/main/12%20-%20Merge%20Sort%20Algorithm%20Problems) | Focuses on merge sort algorithm-related problems, including inversion counts and sorting variations. |
+| 13  | [Quick Sort Algorithm Problems](https://github.com/JawadSher/DSA-LeetCode-GFG-Problems-Repository/tree/main/13%20-%20Quick%20Sort%20Algorithm%20Problems) | A collection of problems to understand and apply the quick sort algorithm efficiently.              |
+| 14  | [Linked List Data Structure Problems](https://github.com/JawadSher/DSA-LeetCode-GFG-Problems-Repository/tree/main/14%20-%20Linked%20List%20Data%20Structure%20Problems) | Contains problems to understand singly and doubly linked list operations, traversal, and modifications. |
+| 15  | [Stack Data Structure Problems](https://github.com/JawadSher/DSA-LeetCode-GFG-Problems-Repository/tree/main/15%20-%20Stack%20Data%20Structure%20Problems) | Includes problems related to stack implementation and applications such as postfix evaluation and balanced parentheses. |
+| 16  | [Queue Data Structure Problems](https://github.com/JawadSher/DSA-LeetCode-GFG-Problems-Repository/tree/main/16%20-%20Queue%20Data%20Structure%20Problems) | Covers queue operations and variations, such as circular queues and deque.                           |
+| 17  | [Binary Tree Data Structure Problems](https://github.com/JawadSher/DSA-LeetCode-GFG-Problems-Repository/tree/main/17%20-%20Binary%20Tree%20Data%20Structure%20Problems) | Problems to master binary tree traversal, construction, and various operations.                     |
+| 18  | [Binary Search Tree Data Structure Problems](https://github.com/JawadSher/DSA-LeetCode-GFG-Problems-Repository/tree/main/18%20-%20Binary%20Search%20Tree%20Data%20Structure%20Problems) | Learn BST operations like searching, insertion, deletion, and advanced challenges.                  |
+| 19  | [Heap Data Structure Problems](https://github.com/JawadSher/DSA-LeetCode-GFG-Problems-Repository/tree/main/19%20-%20Heap%20Data%20Structure%20Problems) | A collection of problems on heap operations, priority queues, and advanced use cases.               |
 
 ## Getting Started
 
