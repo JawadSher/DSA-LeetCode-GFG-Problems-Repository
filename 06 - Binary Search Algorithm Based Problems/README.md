@@ -21,8 +21,8 @@
 
 ## Repository Content
 <p>
-<img src="https://img.shields.io/badge/LEETCODE%20problems%20count-44-blue" alt="Problem Count"> 
-<img src="https://img.shields.io/badge/GEEKSFORGEEKS%20problems%20count-0-blue" alt="Problem Count">
+<img src="https://img.shields.io/badge/problems%20count-44-orange?logo=leetcode" alt="LeetCode">
+<img src="https://img.shields.io/badge/problems%20count-00-darkgreen?logo=geeksforGeeks" alt="GeeksforGeeks">
 <img src="https://img.shields.io/badge/total%20problems%20count-44-blue" alt="Problem Count"> 
 </p>
 
@@ -72,9 +72,6 @@
 | 42 | [Minimum Operations to Exceed Threshold Value I](https://github.com/JawadSher/DSA-LeetCode-Problems-Repository/tree/main/06%20-%20Binary%20Search%20Algorithm%20Based%20Problems/Minimum%20Operations%20to%20Exceed%20Threshold%20Value%20I) | Given a list of integers and a threshold value, find the minimum number of operations needed to exceed the threshold value. Each operation involves selecting a number from the list and adding it to a cumulative total. | [Link](https://leetcode.com/problems/minimum-operations-to-exceed-threshold-value-i/) | Non |
 | 43 | [Search a 2D Matrix](https://github.com/JawadSher/DSA-LeetCode-GFG-Problems-Repository/tree/main/06%20-%20Binary%20Search%20Algorithm%20Based%20Problems/Search%20a%202D%20Matrix) | Given a sorted 2D matrix, use binary search in each row to find a target value.  | [Link](https://leetcode.com/problems/search-a-2d-matrix/) | Non |
 | 44 | [Search a 2D Matrix II](https://github.com/JawadSher/DSA-LeetCode-GFG-Problems-Repository/tree/main/06%20-%20Binary%20Search%20Algorithm%20Based%20Problems/Search%20a%202D%20Matrix%20II) | Given a sorted 2D matrix, write efficient algorithm to find a target value. | [Link](https://leetcode.com/problems/search-a-2d-matrix-ii/) | Non |
-
-
-
 
 ---
 Happy Coding! 😊
