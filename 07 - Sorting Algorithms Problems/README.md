@@ -23,6 +23,9 @@ Whether you're preparing for coding interviews, brushing up on your algorithm sk
 | 01 | [Selection Sort Algorithm Problems](https://github.com/JawadSher/DSA-LeetCode-GFG-Problems-Repository/tree/main/07%20-%20Sorting%20Algorithms%20Problems/01%20-%20Selection%20Sort%20Algorithm%20Problems) | Sort an array with different colors using the selection sort algorithm |
 | 02 | [Bubble Sort Algorithm Problems](https://github.com/JawadSher/DSA-LeetCode-GFG-Problems-Repository/tree/main/07%20-%20Sorting%20Algorithms%20Problems/02%20-%20Bubble%20Sort%20Algorithm%20Problems) | A sample problem demonstrating bubble sort |
 | 03 | [Insertion Sort Algorithm Problems](https://github.com/JawadSher/DSA-LeetCode-GFG-Problems-Repository/tree/main/07%20-%20Sorting%20Algorithms%20Problems/03%20-%20Insertion%20Sort%20Algorithm%20Problems) | A sample problem demonstrating insertion sort |
+| 04 | [Quick Sort Algorithm Problems](https://github.com/JawadSher/DSA-LeetCode-GFG-Problems-Repository/tree/main/13%20-%20Quick%20Sort%20Algorithm%20Problems) | A sample problem demonstrating quick sort|
+| 05 | [Merge Sort Algorithm Problems](https://github.com/JawadSher/DSA-LeetCode-GFG-Problems-Repository/tree/main/12%20-%20Merge%20Sort%20Algorithm%20Problems) | A sample problem demonstrating Merge sort |
+| 06 | [Heap Sort Algorithm Problems](https://github.com/JawadSher/DSA-LeetCode-GFG-Problems-Repository/tree/main/19%20-%20Heap%20Data%20Structure%20Problems/01%20-%20Example) | A sample problem demonstrating Heap sort |
 
 ---
 Happy Coding 😊
