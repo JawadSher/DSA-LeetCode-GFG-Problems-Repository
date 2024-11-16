@@ -13,17 +13,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      # Check if configure script is present
-      - name: List files
-        run: ls -la
-
-      # Ensure the configure script is executable and run it
-      - name: Make configure executable
-        run: chmod +x ./configure
-
-      - name: Run configure
-        run: ./configure
-
+      # Directly run make (if applicable)
       - name: make
         run: make
 
