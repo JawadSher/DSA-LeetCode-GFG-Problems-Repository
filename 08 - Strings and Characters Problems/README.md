@@ -5,8 +5,8 @@
 ## Repository Content
 
 <p>
-<img src="https://img.shields.io/badge/LEETCODE%20problems%20count-8-blue" alt="Problem Count"> 
-<img src="https://img.shields.io/badge/GEEKSFORGEEKS%20problems%20count-8-blue" alt="Problem Count">
+<img src="https://img.shields.io/badge/problems%20count-08-orange?logo=leetcode" alt="LeetCode">
+<img src="https://img.shields.io/badge/problems%20count-08-darkgreen?logo=geeksforGeeks" alt="GeeksforGeeks">
 <img src="https://img.shields.io/badge/total%20problems%20count-17-blue" alt="Problem Count"> 
 </p>
 
