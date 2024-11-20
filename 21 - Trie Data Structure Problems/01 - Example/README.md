@@ -304,12 +304,127 @@ void removeWord(string word) {
 }
 ```
 
-#### **Example Flow**
-Delete `"cat"`:
-1. Unmark `isTerminal` at `'t'`.
-2. Delete `'t'` if it has no children.
-3. Repeat for `'a'` and `'c'`.
+The `removeUtil` function is a recursive helper function used to delete a word from a **Trie**. It traverses the Trie from the root to the end of the word, removes the word's presence, and handles cleaning up unused nodes if necessary. Here's a detailed breakdown of the code:
 
+
+### **Function Prototype**
+```cpp
+bool removeUtil(TrieNode* root, string& word, int index)
+```
+- **Parameters**:
+  1. `TrieNode* root`: The current node being processed.
+  2. `string& word`: The word we want to remove.
+  3. `int index`: The current index of the word's character being processed.
+- **Returns**:
+  - `true`: If the child node can be deleted because it is no longer needed.
+  - `false`: If the child node or any part of the Trie should not be deleted.
+
+
+### **Detailed Explanation**
+#### **Base Case (Line 2-10)**: End of the word
+```cpp
+if (index == word.size()) {
+    if (!root->isTerminal)
+        return false; // Word doesn't exist in the Trie.
+    root->isTerminal = false; // Mark the node as non-terminal (not the end of any word).
+
+    for (int i = 0; i < 26; i++)
+        if (root->children[i] != NULL)
+            return false; // Node has children, cannot delete this node.
+    return true; // Node has no children, safe to delete this node.
+}
+```
+- **Explanation**:
+  - If the end of the word (`index == word.size()`) is reached:
+    - Check if `root->isTerminal` is `true`:
+      - If `false`: The word does not exist, so return `false`.
+      - If `true`: Mark `isTerminal` as `false` because the word is no longer in the Trie.
+    - Check if the current node has any children using the `for` loop:
+      - If children exist, return `false` (indicating the node cannot be deleted because it is part of another word).
+      - If no children, return `true` (indicating the node is safe to delete).
+
+
+#### **Recursive Case (Line 12-28)**: Traversing the Trie
+```cpp
+int charIndex = word[index] - 'a'; // Compute the index of the current character.
+TrieNode* child = root->children[charIndex]; // Get the corresponding child node.
+
+if (child == NULL)
+    return false; // Word doesn't exist in the Trie.
+```
+- **Explanation**:
+  - Calculate the `charIndex` for the current character.
+  - Check if the corresponding child node exists:
+    - If `NULL`: The word does not exist, so return `false`.
+
+
+#### **Recursive Call and Cleanup**
+```cpp
+bool shouldDeleteChild = removeUtil(child, word, index + 1); // Recurse for the next character.
+
+if (shouldDeleteChild) {
+    delete child; // Free memory for the unused child node.
+    root->children[charIndex] = NULL; // Remove the pointer to the deleted child.
+
+    for (int i = 0; i < 26; i++)
+        if (root->children[i] != NULL)
+            return false; // Current node cannot be deleted because it has other children.
+    return true; // Current node is safe to delete.
+}
+```
+- **Explanation**:
+  - Recursively call `removeUtil` for the child node and the next character (`index + 1`).
+  - If the child node is safe to delete (`shouldDeleteChild == true`):
+    - Delete the child node (`delete child`).
+    - Set `root->children[charIndex]` to `NULL`.
+    - Check if the current node still has any children:
+      - If children exist, return `false` (node cannot be deleted because it's still part of another word).
+      - If no children, return `true` (node is safe to delete).
+
+
+#### **Final Case**
+```cpp
+return false; // Default case: Do not delete this node.
+```
+- **Explanation**:
+  - If none of the above conditions are met, return `false`, indicating the current node cannot be deleted.
+
+
+### **Wrapper Function**
+```cpp
+void removeWord(string word) {
+    removeUtil(root, word, 0);
+}
+```
+- **Purpose**:
+  - The `removeWord` function provides a user-friendly interface to remove a word from the Trie.
+  - It simply calls the helper function `removeUtil` with the root node, the word, and an initial index of `0`.
+
+
+### **Example Walkthrough**
+#### Trie Structure Before Removal:
+Suppose the Trie contains the words: `"cat"`, `"can"`, and `"car"`. Now we remove `"can"`.
+
+1. **Recursive Traversal:**
+   - Traverse the Trie for `'c'` → `'a'` → `'n'`.
+   - Mark `'n'` as non-terminal and check if it has children.
+     - `'n'` has no children, so delete it.
+
+2. **Backtrack to `'a'`:**
+   - After deleting `'n'`, check `'a'` for other children.
+     - `'a'` still has children (`'t'` and `'r'`), so it cannot be deleted.
+
+3. **Final Trie Structure:**
+   - `"cat"` and `"car"` remain intact.
+   - `"can"` is removed.
+
+### **Key Features**
+1. **Handles Partial Overlaps:**
+   - Ensures nodes used by multiple words are not deleted prematurely.
+2. **Memory Efficiency:**
+   - Frees unused nodes to optimize space.
+
+This function is essential for maintaining the integrity of the Trie while efficiently removing words.
 
 ---
 ### **Complexity Analysis**
