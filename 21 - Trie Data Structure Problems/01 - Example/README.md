@@ -96,8 +96,7 @@ public:
 };
 ```
 
-
-
+---
 ### **Insertion Operation**
 
 #### **Explanation**
@@ -131,7 +130,101 @@ Insert `"cat"` into an empty Trie:
 2. `'a'`: Create a new node at `children[0]`.
 3. `'t'`: Create a new node at `children[19]` and mark it `isTerminal = true`.
 
+#### Explanation of `int charIndex = word[index] - 'a';`
 
+This line of code is used to compute the **index** of the current character (`word[index]`) in the `children` array of the TrieNode. It is based on the assumption that the `children` array has 26 slots (one for each lowercase English letter, from 'a' to 'z').
+
+
+
+#### **How It Works**
+1. **Characters as Integers (ASCII):**
+   - Each character in programming is internally represented by a unique integer value (its ASCII code).
+   - For example:
+     - `'a'` = 97
+     - `'b'` = 98
+     - `'c'` = 99
+     - ... and so on.
+
+2. **Subtracting `'a'`:**
+   - The expression `word[index] - 'a'` computes the position of the character relative to `'a'`.
+   - Example:
+     - If `word[index] = 'a'`, then `'a' - 'a' = 0` → Index 0.
+     - If `word[index] = 'b'`, then `'b' - 'a' = 1` → Index 1.
+     - If `word[index] = 'z'`, then `'z' - 'a' = 25` → Index 25.
+
+3. **Purpose in the Trie:**
+   - The result (`charIndex`) is used to decide which slot of the `children` array corresponds to the current character.
+
+
+
+#### **Why Use This Calculation?**
+1. **Efficient Mapping:**
+   - It efficiently maps each character ('a' to 'z') to an index (0 to 25), which corresponds to the position in the `children` array.
+
+2. **Uniform Array Indexing:**
+   - Instead of having separate conditions or mappings for each character, this single subtraction operation provides a uniform way to compute indices.
+
+3. **Space Optimization:**
+   - The `children` array only needs 26 slots, and the subtraction ensures each character is directly mapped to the correct slot without any gaps.
+
+
+
+#### **Example with a Word**
+Suppose the word is `"cat"`, and we are processing each character:
+
+1. For `word[0] = 'c'`:
+   - `'c' - 'a' = 99 - 97 = 2`
+   - `charIndex = 2`
+   - Use `children[2]` to store or look for `'c'`.
+
+2. For `word[1] = 'a'`:
+   - `'a' - 'a' = 97 - 97 = 0`
+   - `charIndex = 0`
+   - Use `children[0]` for `'a'`.
+
+3. For `word[2] = 't'`:
+   - `'t' - 'a' = 116 - 97 = 19`
+   - `charIndex = 19`
+   - Use `children[19]` for `'t'`.
+
+
+
+#### **Common Questions**
+1. **What if the input contains uppercase letters?**
+   - Uppercase letters (`'A'` to `'Z'`) have different ASCII values (e.g., `'A'` = 65).
+   - To handle uppercase, you can convert the character to lowercase first using `tolower()`.
+
+   ```cpp
+   char lowerChar = tolower(word[index]);
+   int charIndex = lowerChar - 'a';
+   ```
+
+2. **What about non-alphabetic characters?**
+   - Subtracting `'a'` for non-alphabetic characters (e.g., digits, symbols) may result in invalid indices.
+   - Ensure the input is sanitized to contain only valid lowercase English letters before performing this calculation.
+
+
+
+#### **Visualization**
+For the word `"cat"`, here’s how it maps to the Trie:
+
+```
+Character    ASCII Value    Index in Trie
+   'c'           99              2
+   'a'           97              0
+   't'          116             19
+```
+
+In the TrieNode's `children` array:
+- `children[2]` points to the node for `'c'`.
+- `children[0]` points to the node for `'a'`.
+- `children[19]` points to the node for `'t'`.
+
+
+
+This approach ensures fast and direct access to each character's corresponding node, making Trie operations efficient.
+
+---
 
 ### **Search Operation**
 
@@ -164,7 +257,7 @@ Search for `"cat"`:
 2. Check `isTerminal` at `'t'`. If `true`, the word exists.
 
 
-
+---
 ### **Deletion Operation**
 
 #### **Explanation**
@@ -218,7 +311,7 @@ Delete `"cat"`:
 3. Repeat for `'a'` and `'c'`.
 
 
-
+---
 ### **Complexity Analysis**
 
 | Operation | Time Complexity | Space Complexity |
