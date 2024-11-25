@@ -22,7 +22,7 @@ public:
         }
     }
 
-    // Function to perform BFS traversal
+    // Iterative BFS traversal
     void bfs(int startNode) {
         vector<bool> visited(adjacencyList.size(), false); // Visited array
         queue<int> q; // Queue for BFS
@@ -31,7 +31,7 @@ public:
         visited[startNode] = true;
         q.push(startNode);
 
-        cout << "BFS Traversal: ";
+        cout << "BFS Traversal (Iterative): ";
 
         while (!q.empty()) {
             int currentNode = q.front();
@@ -50,6 +50,46 @@ public:
         }
         cout << endl;
     }
+
+    // Recursive BFS traversal
+    void bfsRecursiveHelper(int startNode, vector<bool>& visited, queue<int>& q) {
+        if (q.empty()) {
+            return;  // Base case: queue is empty, stop recursion
+        }
+
+        int currentNode = q.front();
+        q.pop();
+
+        // Process the current node (e.g., print it)
+        cout << currentNode << " ";
+
+        // Visit all unvisited neighbors
+        for (int neighbor : adjacencyList[currentNode]) {
+            if (!visited[neighbor]) {
+                visited[neighbor] = true;
+                q.push(neighbor);
+            }
+        }
+
+        // Recursive call with the updated queue
+        bfsRecursiveHelper(startNode, visited, q);
+    }
+
+    void bfsRecursive(int startNode) {
+        vector<bool> visited(adjacencyList.size(), false); // Visited array
+        queue<int> q; // Queue for BFS
+
+        // Start BFS from the startNode
+        visited[startNode] = true;
+        q.push(startNode);
+
+        cout << "BFS Traversal (Recursive): ";
+
+        // Start recursive BFS traversal
+        bfsRecursiveHelper(startNode, visited, q);
+
+        cout << endl;
+    }
 };
 
 int main() {
@@ -65,8 +105,11 @@ int main() {
     g.addEdge(1, 4);
     g.addEdge(2, 5);
 
-    // Perform BFS traversal starting from node 0
+    // Perform BFS traversal starting from node 0 (Iterative)
     g.bfs(0);
+
+    // Perform BFS traversal starting from node 0 (Recursive)
+    g.bfsRecursive(0);
 
     return 0;
 }
