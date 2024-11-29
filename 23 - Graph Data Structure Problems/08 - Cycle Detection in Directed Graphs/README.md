@@ -1,4 +1,4 @@
-<h1 align='center'>Detect Cycle in Directed Graph</h1>
+<h1 align='center'>Detect - Cycle - in Directed - Graph</h1>
 
 ## Problem Statement
 
