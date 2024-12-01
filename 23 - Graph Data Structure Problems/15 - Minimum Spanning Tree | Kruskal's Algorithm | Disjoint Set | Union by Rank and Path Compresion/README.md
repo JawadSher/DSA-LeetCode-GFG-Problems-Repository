@@ -269,13 +269,9 @@ Thus, when both **union by rank** and **path compression** are used, the operati
 
 ### Kruskal's Algorithm
 
-### **Kruskal's Algorithm**
-
 Kruskal's algorithm is a **greedy algorithm** used to find the **minimum spanning tree (MST)** of a connected, undirected graph. The MST is a subset of the edges of the graph that connects all the vertices together without any cycles, and the sum of the weights of the edges is minimized.
 
 The algorithm works by sorting all the edges of the graph in increasing order of their weights and adding them one by one to the MST, ensuring no cycle is formed.
-
----
 
 ### **Steps Involved in Kruskal's Algorithm:**
 
@@ -288,15 +284,12 @@ The algorithm works by sorting all the edges of the graph in increasing order of
 4. Repeat step 3 until we have added **(V - 1)** edges to the MST, where **V** is the number of vertices in the graph.
 5. The result will be the **Minimum Spanning Tree** of the graph.
 
----
 
 ### **Time Complexity of Kruskal's Algorithm:**
 
 - Sorting the edges takes **O(E log E)** time, where **E** is the number of edges.
 - The **find** and **union** operations on the disjoint set take **O(α(V))** time, where **V** is the number of vertices and **α** is the inverse Ackermann function, which grows very slowly and is practically constant for all reasonable input sizes.
 - Thus, the overall time complexity of Kruskal's algorithm is **O(E log E)**, which is dominated by the edge sorting step.
-
----
 
 ### **Kruskal's Algorithm: Example**
 
