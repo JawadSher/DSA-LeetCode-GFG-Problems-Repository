@@ -1,7 +1,7 @@
 class Solution {
   public:
     // Depth First Search to find articulation points
-    void DSF(int node, int parent, int& timer, vector<int>& disc, vector<int>& low, vector<int>& visited, vector<int>& AP, vector<vector<int>>& adjacencyList) {
+    void DFS(int node, int parent, int& timer, vector<int>& disc, vector<int>& low, vector<int>& visited, vector<int>& AP, vector<vector<int>>& adjacencyList) {
         visited[node] = true;  // Mark the node as visited
         disc[node] = low[node] = timer++;  // Assign discovery time and initialize low
         int child = 0;  // Count of children in DFS tree
@@ -11,7 +11,7 @@ class Solution {
             if (neighbour == parent) continue;  // Skip the parent node
 
             if (!visited[neighbour]) {  // If the neighbor is not visited
-                DSF(neighbour, node, timer, disc, low, visited, AP, adjacencyList);  // Recursively visit
+                DFS(neighbour, node, timer, disc, low, visited, AP, adjacencyList);  // Recursively visit
                 low[node] = min(low[node], low[neighbour]);  // Update low value for the current node
 
                 // Check articulation point condition
@@ -47,7 +47,7 @@ class Solution {
         // Perform DFS for all connected components
         for (int i = 0; i < V; i++) {
             if (!visited[i]) {
-                DSF(i, -1, timer, disc, low, visited, AP, adjacencyList);
+                DFS(i, -1, timer, disc, low, visited, AP, adjacencyList);
             }
         }
 
