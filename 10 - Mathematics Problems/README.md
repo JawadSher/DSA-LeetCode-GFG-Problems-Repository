@@ -6,16 +6,16 @@
 ### Repository Content
 
 <p>
-<img src="https://img.shields.io/badge/problems%20count-01-orange?logo=leetcode" alt="LeetCode">
-<img src="https://img.shields.io/badge/problems%20count-00-darkgreen?logo=geeksforGeeks" alt="GeeksforGeeks">
-<img src="https://img.shields.io/badge/total%20problems%20count-01-blue" alt="Problem Count"> 
+<img src="https://img.shields.io/badge/problems%20count-00-orange?logo=leetcode" alt="LeetCode">
+<img src="https://img.shields.io/badge/problems%20count-02-darkgreen?logo=geeksforGeeks" alt="GeeksforGeeks">
+<img src="https://img.shields.io/badge/total%20problems%20count-02-blue" alt="Problem Count"> 
 </p>
 
-| No  | Problem Name                      | Description                               | Leetcode | GFG |
-|-----|------------------------------------|-------------------------------------------|----------|-----|
-| 01  | [Modular Exponentiation for Numbers](https://github.com/JawadSher/DSA-LeetCode-GFG-Problems-Repository/tree/main/10%20-%20Mathematics%20Problems/01%20-%20Modular%20Exponentitation%20for%20Numbers) | Calculate \(a^b \mod m\) efficiently. This problem focuses on finding the result of a large exponentiation modulo some number. | [Link](https://leetcode.com/problems/powx-n/) | Non |
 
-This table summarizes the problem, provides a link to its LeetCode and GFG pages, and includes a brief description of the problem.
+| No  | Problem Name                      | Description                                                                                         | Leetcode | GFG |
+|-----|------------------------------------|-----------------------------------------------------------------------------------------------------|----------|-----|
+| 01  | [Modular Exponentiation for Numbers](https://github.com/JawadSher/DSA-LeetCode-GFG-Problems-Repository/tree/main/10%20-%20Mathematics%20Problems/01%20-%20Modular%20Exponentitation%20for%20Numbers) | Calculate \(a^b \mod m\) efficiently.                                                              | Non | [link](https://www.geeksforgeeks.org/problems/modular-exponentiation-for-large-numbers5537/1) |
+| 02 | [Maximum Money](https://github.com/JawadSher/DSA-LeetCode-GFG-Problems-Repository/tree/main/10%20-%20Mathematics%20Problems/02%20-%20Maximum%20Money) | Find the maximum money a thief can rob from non-adjacent houses. | Non | [link](https://www.geeksforgeeks.org/problems/maximum-money2855/1?itm_source=geeksforgeeks&itm_medium=article&itm_campaign=practice_card) |
 
 ### Key Concepts Covered:
 - **Prime Numbers & GCD/LCM**: Learn how to determine prime numbers, calculate the greatest common divisor (GCD), and least common multiple (LCM) of two numbers.
