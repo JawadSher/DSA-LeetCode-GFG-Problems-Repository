@@ -4,6 +4,8 @@
 
 **Problem URL (GFG):** [Largest Sqaure Formed in A Matrix](https://www.geeksforgeeks.org/problems/largest-square-formed-in-a-matrix0806/1)
 
+**Problem URL (leetcode):** [Maximal Square](https://leetcode.com/problems/maximal-square/)
+
 ![image](https://github.com/user-attachments/assets/091097b3-2fa0-4226-9381-ac78c20a6f36)
 
 ### Problem Explanation
