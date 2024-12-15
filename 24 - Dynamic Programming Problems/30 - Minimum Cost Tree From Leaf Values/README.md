@@ -816,3 +816,40 @@ O(n^2)
 - **Space Complexity:** (O(n^2))
 
 This means that the solution efficiently handles arrays of moderate size (e.g., up to 500 or 1000 elements) but may struggle with very large arrays, as the time complexity grows cubically. The space complexity is quadratic, which is typical for dynamic programming solutions.
+
+## Space Optimization (Not Possible)
+Space optimization may not be feasible in this problem due to the following reasons:
+
+### 1. **Nature of the DP Table:**
+   The problem involves calculating the minimum cost of combining leaf values, and the solution is based on dynamic programming (DP). The state transitions depend on both the current subarray and all possible splits within that subarray.
+
+   - **Subproblem Dependencies:** 
+     The DP table stores the minimum cost for subarrays `[i, j]`, which requires access to results from smaller subarrays such as `[i, i]`, `[i, j-1]`, and `[i+1, j]`. Each entry in the DP table is needed for further calculations.
+
+     - Example: To calculate `dp[left][right]`, we need to compute `dp[left][i]` and `dp[i+1][right]` for every split `i` between `left` and `right`. Thus, every subarray `[left, right]` is dependent on smaller subarrays.
+
+   - **Why It's Not Easy to Eliminate Some States:**
+     Since every subarray and split is required to calculate the final minimum cost, it is difficult to remove any states from the DP table. Each value `dp[left][right]` stores an important piece of information that directly affects the final answer. If we were to store only partial results, we would lose essential information and compromise the correctness of the solution.
+
+### 2. **Recomputing Subproblems Would Increase Time Complexity:**
+   If we attempt to reduce the space complexity by not storing the DP table and recomputing subproblems, we would face the problem of repeated calculations. Without storing previously computed results, we would end up recalculating the same subproblems multiple times, significantly increasing the time complexity.
+
+   - **Memoization vs. Recalculation:**
+     Storing intermediate results (memoization) is necessary to prevent recalculating the same subproblems, which is why the DP table is essential. If we try to remove it, we would essentially be redoing the same work multiple times for the same subarrays, which would result in a time complexity of (O(2^n)) or worse (exponential time complexity), rendering the approach inefficient for larger inputs.
+
+### 3. **Recursion and DP Table Size:**
+   The problem uses a 2D DP table where each cell `dp[i][j]` stores the minimum cost for merging the leaf values in the subarray from index `i` to `j`. This requires a table of size (O(n^2)). The 2D table is necessary to store these overlapping subproblems, as the cost for merging depends on the entire subarray's values, not just the values at the boundary.
+
+   - **Space vs. Time Tradeoff:** 
+     While reducing space might seem appealing, it would lead to a significant tradeoff in time complexity. If we only keep a reduced set of subproblems, we would have to revisit the same computations repeatedly, resulting in inefficient solutions.
+
+### 4. **Maxi Map:**
+   The `maxi` map is also used to store the maximum value for all subarrays. Each subarray needs to know the maximum value within its range to calculate the cost. The map's size is (O(n^2)), and we can't reduce this without losing crucial information for the computation.
+
+### Conclusion:
+Space optimization is not easily achievable in this problem because:
+- The problem relies on storing results for overlapping subarrays to avoid recalculating them.
+- Removing the DP table would increase time complexity, potentially making the solution infeasible for larger inputs.
+- The structure of the problem inherently requires (O(n^2)) space due to the need to store values for all subarrays and splits.
+
+In summary, while space optimization might be possible in some problems with fewer overlapping subproblems or more independent computations, it is not feasible in this case due to the nature of dynamic programming and the required subproblem dependencies.
