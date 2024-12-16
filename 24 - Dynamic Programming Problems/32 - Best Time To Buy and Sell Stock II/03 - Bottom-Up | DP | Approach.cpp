@@ -11,10 +11,6 @@ public:
         // - `buy` represents whether buying (1) or selling (0) is allowed on this day
         vector<vector<int>> dp(n + 1, vector<int>(2, 0));
 
-        // Base cases: No profit can be made after the last day
-        dp[n][0] = 0; // No stock in hand, no profit
-        dp[n][1] = 0; // Stock in hand, no profit
-
         // Iterate backward from the second last day to the first day
         for (int index = n - 1; index >= 0; index--) {
             // Iterate over the two states: buy (1) and sell (0)
