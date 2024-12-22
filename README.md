@@ -52,9 +52,15 @@ The repository includes a range of problems, many of which are inspired by LeetC
 | 17  | [Binary Tree Data Structure Problems](https://github.com/JawadSher/DSA-LeetCode-GFG-Problems-Repository/tree/main/17%20-%20Binary%20Tree%20Data%20Structure%20Problems) | Problems to master binary tree traversal, construction, and various operations.                     |
 | 18  | [Binary Search Tree Data Structure Problems](https://github.com/JawadSher/DSA-LeetCode-GFG-Problems-Repository/tree/main/18%20-%20Binary%20Search%20Tree%20Data%20Structure%20Problems) | Learn BST operations like searching, insertion, deletion, and advanced challenges.                  |
 | 19  | [Heap Data Structure Problems](https://github.com/JawadSher/DSA-LeetCode-GFG-Problems-Repository/tree/main/19%20-%20Heap%20Data%20Structure%20Problems) | A collection of problems on heap operations, priority queues, and advanced use cases.               |
+| 20  | [Hashmap Data Structure Problems](https://github.com/JawadSher/DSA-LeetCode-GFG-Problems-Repository/tree/main/20%20-%20Hashmap%20Data%20Structure%20Problems) | Problems involving hashmaps for efficient key-value pair storage and lookup. |
+| 21  | [Trie Data Structure Problems](https://github.com/JawadSher/DSA-LeetCode-GFG-Problems-Repository/tree/main/21%20-%20Trie%20Data%20Structure%20Problems) | Problems using Tries, a tree-based structure for efficient string search. |
+| 22  | [Backtracking Algorithm Based Problems](https://github.com/JawadSher/DSA-LeetCode-GFG-Problems-Repository/tree/main/22%20-%20Backtracking%20Algorithm%20Based%20Problems) | Problems requiring backtracking to explore possible solutions and undo invalid choices. |
+| 23  | [Graph Data Structure Problems](https://github.com/JawadSher/DSA-LeetCode-GFG-Problems-Repository/tree/main/23%20-%20Graph%20Data%20Structure%20Problems) | Problems related to graphs, focusing on traversal, connectivity, and pathfinding. |
+| 24  | [Dynamic Programming Problems](https://github.com/JawadSher/DSA-LeetCode-GFG-Problems-Repository/tree/main/24%20-%20Dynamic%20Programming%20Problems) | Problems using dynamic programming to solve complex problems by breaking them into simpler subproblems. |
+| 25  | [Greedy Algorithm Problems](https://github.com/JawadSher/DSA-LeetCode-GFG-Problems-Repository/tree/main/25%20-%20Greedy%20Algorithm%20Problems) | Problems solved using greedy algorithms by making locally optimal choices. |
+
 
 ## Getting Started
-
 To get started with solving the problems in this repository, follow these steps:
 
 1. **Clone the repository:**
