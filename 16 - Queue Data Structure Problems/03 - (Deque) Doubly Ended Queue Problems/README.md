@@ -24,7 +24,7 @@ Circular deques are widely used in scenarios such as:
 <p>
 <img src="https://img.shields.io/badge/problems%20count-01-orange?logo=leetcode" alt="LeetCode">
 <img src="https://img.shields.io/badge/problems%20count-00-darkgreen?logo=geeksforGeeks" alt="GeeksforGeeks">
-<img src="https://img.shields.io/badge/total%20problems%20count-03-blue" alt="Problem Count"> 
+<img src="https://img.shields.io/badge/total%20problems%20count-02-blue" alt="Problem Count"> 
 </p>
 
 | No | Problem Name | Description | LeetCode | GFG |
