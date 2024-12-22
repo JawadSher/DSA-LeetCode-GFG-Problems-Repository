@@ -17,3 +17,6 @@ The problems cover a range of difficulty levels and can be used to deepen your u
 | 01 | [Example](https://github.com/JawadSher/DSA-LeetCode-GFG-Problems-Repository/tree/main/20%20-%20Hashmap%20Data%20Structure%20Problems/01%20-%20Example) | This is a basic example problem demonstrating the use of Hashmaps for simple operations. | Non | Non |
 | 02 | [Count Elements With Maximum Frequency](https://github.com/JawadSher/DSA-LeetCode-GFG-Problems-Repository/tree/main/20%20-%20Hashmap%20Data%20Structure%20Problems/02%20-%20Count%20Elements%20With%20Maximum%20Frequency) | Find the element with the highest frequency in a Hashmap. | [Link](https://leetcode.com/problems/count-elements-with-maximum-frequency/) | Non |
 | 03 | [N - Queens](https://github.com/JawadSher/DSA-LeetCode-GFG-Problems-Repository/tree/main/20%20-%20Hashmap%20Data%20Structure%20Problems/03%20-%20N%20-%20Queens) | A famous problem solved using Hashmap for tracking safe positions of queens on a chessboard. | [Link](https://leetcode.com/problems/n-queens/) | Non |
+
+---
+Happy Coding! 😊
