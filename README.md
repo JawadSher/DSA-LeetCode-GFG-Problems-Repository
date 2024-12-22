@@ -142,6 +142,5 @@ I would like to sincerely apologize for any inaccuracies or inconsistencies you 
 
 If you encounter any issues or discrepancies, I appreciate your understanding and patience. Your feedback is highly valued, and I will make every effort to address and correct any problems promptly. Thank you for your continued support, and I am committed to improving the quality of the content shared here.
 
-Best regards,
-JAWAD SHER
+Best regards, JAWAD SHER
 
