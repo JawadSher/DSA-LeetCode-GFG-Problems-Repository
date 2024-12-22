@@ -132,4 +132,16 @@ A: Yes, feel free to use any programming language you are comfortable with.
 │       └── c-cpp.yml
 ├── LICENSE
 └── README.md
+```
+
+### Apology for Any Inaccuracies or Inconveniences
+
+Dear Visitor,
+
+I would like to sincerely apologize for any inaccuracies or inconsistencies you may come across while navigating through the repository. While I strive to ensure the content is accurate and up-to-date, there may be occasional errors or oversights, as the repository is manually maintained.
+
+If you encounter any issues or discrepancies, I appreciate your understanding and patience. Your feedback is highly valued, and I will make every effort to address and correct any problems promptly. Thank you for your continued support, and I am committed to improving the quality of the content shared here.
+
+Best regards,
+JAWAD SHER
 
