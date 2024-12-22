@@ -25,8 +25,8 @@ In this repository, you will find a variety of dynamic programming problems rang
 ## Repository Content
 
 <p>
-<img src="https://img.shields.io/badge/problems%20count-40-orange?logo=leetcode" alt="LeetCode">
-<img src="https://img.shields.io/badge/problems%20count-00-darkgreen?logo=geeksforGeeks" alt="GeeksforGeeks">
+<img src="https://img.shields.io/badge/problems%20count-30-orange?logo=leetcode" alt="LeetCode">
+<img src="https://img.shields.io/badge/problems%20count-16-darkgreen?logo=geeksforGeeks" alt="GeeksforGeeks">
 <img src="https://img.shields.io/badge/total%20problems%20count-40-blue" alt="Problem Count"> 
 </p>
 
