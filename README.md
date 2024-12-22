@@ -22,7 +22,7 @@ Welcome to the Data Structures & Algorithms repository! This repository is dedic
 
 The repository includes a range of problems, many of which are inspired by LeetCode challenges. I am committed to updating this repository daily with new problems and solutions to keep it current and relevant. The goal is to solve LeetCode problems, document the solutions, and continuously improve the content available here.
 
-## Problem Set Overview
+## Repository Content
 <p>
 <img src="https://img.shields.io/badge/solved%20problems%20count-127-orange?logo=leetcode" alt="LeetCode">
 <img src="https://img.shields.io/badge/solved%20problems%20count-105-darkgreen?logo=geeksforGeeks" alt="GeeksforGeeks">
