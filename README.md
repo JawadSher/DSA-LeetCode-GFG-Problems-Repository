@@ -27,7 +27,7 @@ The repository includes a range of problems, many of which are inspired by LeetC
 <img src="https://img.shields.io/badge/solved%20problems%20count-127-orange?logo=leetcode" alt="LeetCode">
 <img src="https://img.shields.io/badge/solved%20problems%20count-105-darkgreen?logo=geeksforGeeks" alt="GeeksforGeeks">
 <img src="https://img.shields.io/badge/total%20general%20problems%20count-69-blue" alt="Problem Count">
-<img src="https://img.shields.io/badge/total%20problems%20count-301-blue" alt="Problem Count">
+<img src="https://img.shields.io/badge/total%20problems%20count-377-blue" alt="Problem Count">
 </p>
 
 | No  | Problem Category                                                                                       | Description                                                                                         |
